@@ -17,5 +17,6 @@ train.item_cnt_day.hist(bins=100)
 # plt.show()
 
 print('Data set size before remove item price 0 cleaning:', train.shape)
+#filter price
 train = train.query('item_price > 0')
 print('Data set size after remove item price 0 cleaning:', train.shape)

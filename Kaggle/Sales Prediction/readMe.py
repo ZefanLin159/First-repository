@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import os
 import sys
-
 # getcwd F:\work\Kaggle\Sales Prediction
 # sysargv ['F:/work/Kaggle/Sales Prediction/main.py']
 # realpath F:\work\Kaggle\Sales Prediction\main.py
