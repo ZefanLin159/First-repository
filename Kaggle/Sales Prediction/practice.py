@@ -40,7 +40,7 @@ import matplotlib.pyplot as plt
 # df = pd.DataFrame(np.random.random((6, 4)), index=dates, columns=['a', 'b', 'c', 'd'])
 # print(df)
 #
-oldData = ([[1, 1, 2, 2], [1, 1, 3, 7],[2,1,4,5], [2, 2, 3, 8], [3, 2, 4, 5]])
+oldData = ([[1, 1, 2, 2], [1, 1, 3, 7], [2, 1, 4, 5], [2, 2, 3, 8], [3, 2, 4, 5]])
 newData = pd.DataFrame(oldData, columns=['A', 'B', 'C', 'D'])
 print(newData)
 #    A  B  C  D
@@ -59,5 +59,6 @@ print(newGroup)
 # 0  1  1  5
 # 1  2  2  3
 # 2  3  2  5
-sns.pointplot(x='A',y='B',hue='D',data=newGroup)
-plt.show()
+# sns.pointplot(x='A',y='B',hue='D',data=newGroup)
+# plt.show()
+newGroup.isin('A')

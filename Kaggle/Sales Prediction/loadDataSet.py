@@ -4,6 +4,9 @@ import sys
 from datetime import datetime
 import matplotlib.pyplot as plt
 
+pd.set_option('display.width', 1000)  # 增加每行的宽度
+pd.set_option('display.max_rows',None)#取消行限制
+pd.set_option('display.max_columns',None)#取消列限制
 path = 'KaggleDataSet/competitions/competitive-data-science-predict-future-sales/'
 
 item_categories_path = os.path.abspath(path + 'item_categories.csv')
@@ -43,7 +46,7 @@ test = pd.read_csv(test_path)
 train['year'] = pd.to_datetime(train['date']).dt.strftime('%Y')
 train['month'] = train.date.apply(lambda x: datetime.strptime(x, '%d.%m.%Y').strftime('%m'))
 pd.set_option('display.max_rows', 10, 'display.max_columns', 10)
-# print(train.head(2))
+print(train.head(2))
 
 # now =datetime.now()
 # print(now.strftime('%Y-%m-%d'))
