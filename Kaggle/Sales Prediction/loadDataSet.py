@@ -5,8 +5,8 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 pd.set_option('display.width', 1000)  # 增加每行的宽度
-pd.set_option('display.max_rows',None)#取消行限制
-pd.set_option('display.max_columns',None)#取消列限制
+pd.set_option('display.max_rows', None)  # 取消行限制
+pd.set_option('display.max_columns', None)  # 取消列限制
 path = 'KaggleDataSet/competitions/competitive-data-science-predict-future-sales/'
 
 item_categories_path = os.path.abspath(path + 'item_categories.csv')
