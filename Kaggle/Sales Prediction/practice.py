@@ -61,4 +61,10 @@ print(newGroup)
 # 2  3  2  5
 # sns.pointplot(x='A',y='B',hue='D',data=newGroup)
 # plt.show()
-newGroup.isin('A')
+
+df = pd.DataFrame({'a': [1, 23, 3], 'b': [3, 5, 6]})
+dg = pd.DataFrame({'a': [1, 23, 23], 'b': [3, 7, 9], 'c': [45, 33, 21]})
+print(dg['a'] .unique())
+print(df.isin(dg['a'].unique()))
+df = df[df.isin(dg['a'].unique())]
+print(df)
