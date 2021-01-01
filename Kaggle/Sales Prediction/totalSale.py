@@ -17,24 +17,17 @@ plt.plot(ts)  # 折线图
 # print(train.item_cnt_day.describe())
 # plt.show()
 
-# print('Data set size before remove item price 0 cleaning:', train.shape)
 # 滤除价格小于等于0的样本
 train = train.query('item_price > 0')
-# print('Data set size after remove item price 0 cleaning:', train.shape)
 
 # skip
-# print('Data set size before filter valid:', train.shape)
 # 留下测试集中test_id不重复的元素，并返回一个新的无元素重复的元组或者列表
 # 训练集留下和测试集中商品ID，商店ID相同的数据。（滤除测试集中没有的商品和商店）
-# print('test[shop_id].unique()=', test['shop_id'].unique())
 train = train[train['shop_id'].isin(test['shop_id'].unique())]
-# print('boolean = ', train['shop_id'].isin(test['shop_id'].unique()))
 # Only items that exist in test set.
 train = train[train['item_id'].isin(test['item_id'].unique())]
 # print('Data set size after filter valid:', train.shape)
 
-
-# print('Data set size before remove outliers:', train.shape)
 # 移除异常/错误值，留下正常的值
 train = train.query('item_cnt_day >= 0 and item_cnt_day <= 125 and item_price < 75000')
 print('Data set size after remove outliers:', train.shape)

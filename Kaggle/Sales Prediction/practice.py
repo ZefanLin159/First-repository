@@ -62,9 +62,20 @@ print(newGroup)
 # sns.pointplot(x='A',y='B',hue='D',data=newGroup)
 # plt.show()
 
-df = pd.DataFrame({'a': [1, 23, 3], 'b': [3, 5, 6]})
-dg = pd.DataFrame({'a': [1, 23, 23], 'b': [3, 7, 9], 'c': [45, 33, 21]})
-print(dg['a'] .unique())
-print(df.isin(dg['a'].unique()))
-df = df[df.isin(dg['a'].unique())]
-print(df)
+# df = pd.DataFrame({'a': [1, 23, 3], 'b': [3, 5, 6]})
+# dg = pd.DataFrame({'a': [1, 23, 23], 'b': [3, 7, 9], 'c': [45, 33, 21]})
+# print(dg['a'] .unique())
+# print(df.isin(dg['a'].unique()))
+# df = df[df.isin(dg['a'].unique())]
+# print(df)
+
+# data = pd.DataFrame({
+#     'id': [1, 2, 1, 2, 2, 2],
+#     'value': ['A', 'B', 'C', 'D', 'E', 'G1']
+# })
+#
+# print(data.groupby('id')['value'].apply(list))
+
+a = np.mat([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(a[1:2, 1:2])
+# 输出5 矩阵切片，前面切行，后面切列

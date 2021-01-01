@@ -46,7 +46,7 @@ test = pd.read_csv(test_path)
 train['year'] = pd.to_datetime(train['date']).dt.strftime('%Y')
 train['month'] = train.date.apply(lambda x: datetime.strptime(x, '%d.%m.%Y').strftime('%m'))
 pd.set_option('display.max_rows', 10, 'display.max_columns', 10)
-print(train.head(2))
+print(train.head(3))
 
 # now =datetime.now()
 # print(now.strftime('%Y-%m-%d'))
