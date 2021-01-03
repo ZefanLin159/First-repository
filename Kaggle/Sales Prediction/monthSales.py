@@ -7,7 +7,7 @@ monthly_sales_train = train.groupby(["date_block_num", "shop_id", "item_id"])[
     "date_block_num", "date", "item_price", "item_cnt_day"].agg(
     {"date_block_num": 'mean', "date": ["min", 'max'], "item_price": "mean", "item_cnt_day": "sum"})
 
-# print(monthly_sales_train.head(5))
+print(monthly_sales_train.head(5))
 # print('\n')
 
 # 将item_cnt_day列表化并重新进行索引
@@ -21,18 +21,18 @@ sales_data_flat.fillna(0, inplace=True)
 # 删除['shop_id', 'item_id']列
 sales_data_flat.drop(['shop_id', 'item_id'], inplace=True, axis=1)
 # ID date_block_num sum
-# print(sales_data_flat.head(5))
+print(sales_data_flat.head(5))
 # print('\n')
 
 # 创建数据透视表.
 # 行=每个商店+物品代码
 # 列将按时间顺序输出
-
+# 'ID'是测试集中某一商店卖的某一产品
 pivoted_sales = sales_data_flat.pivot_table(index='ID', columns='date_block_num', fill_value=0, aggfunc='sum')
 print(pivoted_sales.head(10))
 print('\n')
 
-# 我们将保留除最后一列以外的所有列
+# 我们将保留除最后一列以外的所有列，并增加厚度
 X_train = np.expand_dims(pivoted_sales.values[:, :-1], axis=2)
 # 最后一列作为测试集
 y_train = pivoted_sales.values[:, -1:]

@@ -12,7 +12,7 @@ sales_model.add(Dense(1))
 sales_model.compile(loss='mse', optimizer='adam', metrics=['mean_squared_error'])
 sales_model.summary()
 
-sales_model.fit(X_train, y_train, batch_size=4096, epochs=20)
+sales_model.fit(X_train, y_train, batch_size=4096, epochs=100)
 
 submission_output = sales_model.predict(X_test)
 submission = pd.DataFrame({'ID': test['ID'], 'item_cnt_month': submission_output.ravel()})

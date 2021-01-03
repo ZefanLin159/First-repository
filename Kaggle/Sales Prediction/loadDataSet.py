@@ -43,10 +43,10 @@ test = pd.read_csv(test_path)
 # test.info()
 # print("loadDataSuccessfully\n")
 
-train['year'] = pd.to_datetime(train['date']).dt.strftime('%Y')
-train['month'] = train.date.apply(lambda x: datetime.strptime(x, '%d.%m.%Y').strftime('%m'))
+train['year'] = pd.to_datetime(train['date']).dt.strftime('%Y')  # 增加年份列
+train['month'] = train.date.apply(lambda x: datetime.strptime(x, '%d.%m.%Y').strftime('%m'))  # 增加月份列
 pd.set_option('display.max_rows', 10, 'display.max_columns', 10)
-print(train.head(3))
+print(train.head(5))
 
 # now =datetime.now()
 # print(now.strftime('%Y-%m-%d'))
