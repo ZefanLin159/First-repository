@@ -2,6 +2,9 @@ import numpy as np
 import seaborn as sns
 from loadDataSet import pd, train, plt, test
 
+# dataFrame给表格
+# groupby(['A','B'])['C'].sum(),取出['A','B']组成新表格对C求和，
+# 然后reset_index():原先第一列前面重新加索引得到新表格（这里会保留原先的一列）
 ts = train.groupby(["date_block_num"])["item_cnt_day"].sum()  # 每月的总销售量
 ts.astype('float')
 plt.figure(figsize=(10, 5))  # 尺寸
