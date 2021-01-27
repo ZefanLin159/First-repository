@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 class Value {
     private int i;
-
+    //成员变量等于函数内的变量
     public void set(int i) {
         this.i = i;
     }
