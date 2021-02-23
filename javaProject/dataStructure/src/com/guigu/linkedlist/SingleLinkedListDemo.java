@@ -49,7 +49,7 @@ class HeroNode {
 //创建单链表管理我们的英雄
 class SingleLinkedList {
     //先定义一个头结点，头节点不要动，不存放数据
-    private HeroNode headNode = new HeroNode(0, "", "");
+    final private HeroNode headNode = new HeroNode(0, "", "");
 
     //显示链表
     public void list() {
@@ -86,4 +86,6 @@ class SingleLinkedList {
         //当退出while循环时，则temp指向链表的最后
         tempNode.next = heroNode;
     }
+
+
 }
