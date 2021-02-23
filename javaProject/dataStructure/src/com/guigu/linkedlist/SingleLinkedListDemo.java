@@ -12,10 +12,11 @@ public class SingleLinkedListDemo {
         //创建一个链表
         SingleLinkedList singleLinkedList = new SingleLinkedList();
         //加入这些节点数据
-        singleLinkedList.add(hero1);
-        singleLinkedList.add(hero2);
-        singleLinkedList.add(hero3);
-        singleLinkedList.add(hero4);
+        singleLinkedList.addByOrder(hero2);
+        singleLinkedList.addByOrder(hero1);
+        singleLinkedList.addByOrder(hero4);
+        singleLinkedList.addByOrder(hero3);
+        singleLinkedList.addByOrder(hero3);
 
         singleLinkedList.list();
 
@@ -58,16 +59,38 @@ class SingleLinkedList {
         }else {
             //若非空，则创建一个辅助变量来遍历输出
             HeroNode tempNode = headNode.next;
-            while (true) {
-                if (tempNode == null) {
-                    break;
-                }
+            while (tempNode != null) {
                 System.out.println(tempNode);
                 tempNode = tempNode.next;
             }
         }
     }
+    //第二种方法添加链表
+    //按照排名添加，否则失败
+    public void addByOrder(HeroNode heroNode){
+        HeroNode tempNode = headNode;
+        boolean addFlag = false;
+        while (true){
+            if(tempNode.next == null){
+                break;
+            }
+            if(tempNode.next.no >heroNode.no){
+                break;
+            }else if(tempNode.next.no == heroNode.no){
+                addFlag = true;
+                break;
+            }
+            tempNode = tempNode.next;
+        }
+        if(addFlag){
+            System.out.printf("准备插入的英雄已经存在了，不能加入 %d \n ", heroNode.no);
+        }else {
+            //插入到链表中
+            heroNode.next = tempNode.next;
+            tempNode.next = heroNode;
+        }
 
+    }
     //添加节点到单向链表
     //不考虑编号顺序时
     //1，找到当前链表的最后节点；2，将最后这个节点的next指向新的节点
@@ -75,17 +98,14 @@ class SingleLinkedList {
         //创建一个辅助节点,没有初始数据时则为头结点
         HeroNode tempNode = headNode;
         //遍历链表
-        while (true) {
+        while (tempNode.next != null) {
             //找到链表的最后
-            if (tempNode.next == null) {
-                break;
-            }
             //如果没有找到最后
             tempNode = tempNode.next;
         }
         //当退出while循环时，则temp指向链表的最后
         tempNode.next = heroNode;
     }
-
+    
 
 }
