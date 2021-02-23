@@ -12,10 +12,10 @@ public class SingleLinkedListDemo {
         //创建一个链表
         SingleLinkedList singleLinkedList = new SingleLinkedList();
         //加入这些节点数据
-//        singleLinkedList.add(hero1);
-//        singleLinkedList.add(hero2);
-//        singleLinkedList.add(hero3);
-//        singleLinkedList.add(hero4);
+        singleLinkedList.add(hero1);
+        singleLinkedList.add(hero2);
+        singleLinkedList.add(hero3);
+        singleLinkedList.add(hero4);
 
         singleLinkedList.list();
 
