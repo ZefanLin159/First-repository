@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd1d6649-8de7-4dd5-bede-3739e367c358" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaProject1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/Animal/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/Animal/Hippo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/Animal/makeHippo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/Notebook/Notebook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/Notebook/Value.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/Notebook/笔记.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/display/Clock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/display/Display.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/dome/CD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/dome/DVD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/dome/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/dome/Datatbase 笔记.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/dome/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/dome/~$tatbase 笔记.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/foxAndrabbit/notes.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/foxAndrabbit/~$notes.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/headFirst/Books.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/headFirst/BooksTestDrive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/headFirst/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaProject1/com/vendingmachine/VendingMachine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Animal/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Animal/Hippo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Animal/makeHippo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Notebook/Notebook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Notebook/笔记.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/display/Clock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/display/Display.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dome/CD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dome/DVD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dome/Database.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dome/Datatbase 笔记.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dome/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/foxAndrabbit/notes.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/foxAndrabbit/~$notes.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/headFirst/Books.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/headFirst/BooksTestDrive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/headFirst/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vendingmachine/VendingMachine.java" beforeDir="false" />
-    </list>
+    <list default="true" id="bd1d6649-8de7-4dd5-bede-3739e367c358" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +22,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613180584250</updated>
       <workItem from="1613180586263" duration="50000" />
+      <workItem from="1614050060651" duration="159000" />
     </task>
     <servers />
   </component>
@@ -92,5 +61,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
