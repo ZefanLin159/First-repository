@@ -17,8 +17,9 @@ public class SingleLinkedListDemo {
         singleLinkedList.addByOrder(hero4);
         singleLinkedList.addByOrder(hero3);
         singleLinkedList.addByOrder(hero3);
-
+        singleLinkedList.addByOrder(hero1);
         singleLinkedList.list();
+
 
     }
 }
