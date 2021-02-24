@@ -11,7 +11,7 @@ public class SingleLinkedListDemo {
 
         //创建一个链表
         SingleLinkedList singleLinkedList = new SingleLinkedList();
-        //加入这些节点数据
+        //加入这些节点数据3
         singleLinkedList.addByOrder(hero2);
         singleLinkedList.addByOrder(hero1);
         singleLinkedList.addByOrder(hero4);
