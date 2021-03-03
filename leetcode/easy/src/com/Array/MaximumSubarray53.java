@@ -1,14 +1,6 @@
 package com.Array;
 
 public class MaximumSubarray53 {
-    public static void main(String[] args) {
-        int[] nums = {-2, 1, 3, -3, 3, 2, 1, -5, 4};
-        Solution53 solution53 = new Solution53();
-        System.out.println(solution53.maxSubArray(nums));
-    }
-}
-
-class Solution53 {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
 //        int[] dp = new int[n];
@@ -35,4 +27,8 @@ class Solution53 {
 
         return max;
     }
+    public static void main(String[] args) {
+        int[] nums = {-2, 1, 3, -3, 3, 2, 1, -5, 4};
+    }
 }
+

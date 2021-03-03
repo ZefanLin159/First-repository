@@ -1,12 +1,6 @@
 package com.LinkedList;
 
 public class LinkedListCycle141 {
-    public static void main(String[] args) {
-
-    }
-}
-
-class Solution141 {
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
             return false;
@@ -22,5 +16,8 @@ class Solution141 {
             }
         }
         return fast != null && fast.next != null;
+    }
+    public static void main(String[] args) {
+
     }
 }

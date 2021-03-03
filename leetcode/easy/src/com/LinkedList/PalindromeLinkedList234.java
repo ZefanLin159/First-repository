@@ -1,12 +1,6 @@
 package com.LinkedList;
 
 public class PalindromeLinkedList234 {
-    public static void main(String[] args) {
-
-    }
-}
-
-class Solution234 {
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) {
             return true;
@@ -49,5 +43,8 @@ class Solution234 {
         }
 
         return flag;
+    }
+    public static void main(String[] args) {
+
     }
 }

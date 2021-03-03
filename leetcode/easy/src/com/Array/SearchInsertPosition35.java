@@ -1,12 +1,6 @@
 package com.Array;
 
 public class SearchInsertPosition35 {
-    public static void main(String[] args) {
-
-    }
-}
-
-class Solution35 {
     public int searchInsert(int[] nums, int target) {
         boolean isDuplicate = false;
         int i = 0;
@@ -25,5 +19,8 @@ class Solution35 {
             //这里遍历完的i已经是数组的长度了，记住for循环的顺序
         }
         return i;
+    }
+    public static void main(String[] args) {
+
     }
 }

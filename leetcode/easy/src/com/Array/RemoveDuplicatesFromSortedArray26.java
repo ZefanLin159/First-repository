@@ -2,12 +2,6 @@ package com.Array;
 
 
 public class RemoveDuplicatesFromSortedArray26 {
-    public static void main(String[] args) {
-
-    }
-}
-
-class Solution26 {
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
         //快慢针解法，i在j前面一位来进行处理,
@@ -22,4 +16,9 @@ class Solution26 {
         }
         return i + 1;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
+

@@ -1,21 +1,27 @@
 package com.LinkedList;
 
 public class RemoveLinkedListElements203 {
+    //考虑[1,1,1] 1的情况怎么解决
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode dummyHead = new ListNode(0);
+        dummyHead.next = head;
+        ListNode newHead = dummyHead;
+        //建议接上新的表头便于对传入的链表头进行操作
+        while (newHead.next != null) {
+            ListNode next = newHead.next;
+            if (next.val == val) {    //注意该判断条件要用新的next结点来判断
+                newHead.next = next.next;
+            } else {
+                newHead = newHead.next;
+            }
+        }
+        return dummyHead.next;//最后返回原来的链表头，这样不容易出错
+    }
     public static void main(String[] args) {
 
     }
 }
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- * int val;
- * ListNode next;
- * ListNode() {}
- * ListNode(int val) { this.val = val; }
- * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
 //class Solution203 {
 //    public ListNode removeElements(ListNode head, int val) {
 //        if(head == null) return null;
@@ -41,20 +47,3 @@ public class RemoveLinkedListElements203 {
 //    }
 //}
 
-//考虑[1,1,1] 1的情况怎么解决
-class Solution203 {
-    public ListNode removeElements(ListNode head, int val) {
-        ListNode dummyHead = new ListNode(0);
-        dummyHead.next = head;
-        ListNode newHead = dummyHead;
-        while (newHead.next != null) {
-            ListNode next = newHead.next;
-            if (next.val == val) {    //注意该判断条件要用新的next结点来判断
-                newHead.next = next.next;
-            } else {
-                newHead = newHead.next;
-            }
-        }
-        return dummyHead.next;
-    }
-}

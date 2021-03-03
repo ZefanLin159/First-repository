@@ -1,12 +1,6 @@
 package com.LinkedList;
 
 public class MergeTwoSortedLists21 {
-    public static void main(String[] args) {
-
-    }
-}
-
-class Solution21 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode newHead = dummy;
@@ -22,5 +16,8 @@ class Solution21 {
         }
         newHead.next = l1 == null ? l2 : l1;//此处要注意是newHead.next指向非空的l1,l2结点
         return dummy.next;
+    }
+    public static void main(String[] args) {
+
     }
 }

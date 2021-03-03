@@ -1,12 +1,6 @@
 package com.LinkedList;
 
 public class ReverseLinkedList206 {
-    public static void main(String[] args) {
-
-    }
-}
-
-class Solution206{
     public ListNode reverseList(ListNode head) {
         ListNode dummy = new ListNode(0);
         ListNode newHead = dummy;
@@ -20,4 +14,8 @@ class Solution206{
 
         return dummy.next;
     }
+    public static void main(String[] args) {
+
+    }
 }
+
