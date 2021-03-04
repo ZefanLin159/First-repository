@@ -10,6 +10,8 @@ public class RemoveElement27 {
                 nums[slow] = nums[fast];
                 slow++;
             }
+            //如果等于要删除的值，慢针迟早会把这个值覆盖掉，所以else不必写
+
         }
         return slow;
     }

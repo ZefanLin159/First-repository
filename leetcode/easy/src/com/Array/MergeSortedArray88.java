@@ -2,12 +2,28 @@ package com.Array;
 
 public class MergeSortedArray88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        //将 nums1 的数字全部移动到末尾,这里是copy的，需要自己理解一下这个技巧
-        for (int count = 1; count <= m; count++) {
-            nums1[m + n - count] = nums1[m - count];
-        }
+        int i = m - 1, j = n - 1, k = m + n - 1;
+        //精妙之处依然是倒序遍历，k指向多余的空间来进行遍历
+        while (j >= 0) {
+            if (i < 0) {
+                while (j >= 0) {
+                    nums1[k] = nums2[j];//粗心了，这里应填入nums1[k]的，写成了nums2[k]
+                    k--;
+                    j--;
+                }
+                break;
+            }
+            //这里如果直接提交会出现j>=0时，而i<0的情况，所以需要在前面加关于i的判断语句
+            if (nums1[i] >= nums2[j]) {
+                nums1[k] = nums1[i];
+                i--;
+            } else {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
 
-        int k = 0,j = 0,i = n;//这里为什么是从n开始遍历
+        }
     }
 
     public static void main(String[] args) {
