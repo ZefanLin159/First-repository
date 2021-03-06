@@ -32,3 +32,5 @@ public class MaximumSubarray53 {
     }
 }
 
+class Solution53{
+}
