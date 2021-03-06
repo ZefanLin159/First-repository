@@ -24,11 +24,19 @@ public class BestTimeToBuyAndSellStock121 {
 class Solution123 {
     public int maxProfit(int[] prices) {
         //动态规划解法
-        int profit = 0;
-        int dp = prices[0];
-        for(int i =1;i<prices.length;i++){
-            
+        int maxProfit = 0;
+        int dp = 0;
+        for (int i = 1; i < prices.length; i++) {
+            //构建新数组，数组含义为第i天和前一天的相对差，但事实上每次都会覆盖掉
+            int num = prices[i] - prices[i - 1];
+            //题目这样设计可以变成53题求子列和问题
+            //Kadane algorithm
+            //此处的意义为连续的和比如对应第 3 到 第 6 天加起来的和，那对应的买入卖出其实就是第 2 天买入，第 6 天卖出
+            //dp = max（当前的利润，当前利润和之前的相对利润和） max可以保证不亏本卖出
+            //T^T这不是正常人能想到的思路，这方法不是很理解，先跳过
+            dp = Math.max(num, dp + num);
+            maxProfit = Math.max(maxProfit, dp);
         }
-        return profit;
+        return maxProfit;
     }
 }
