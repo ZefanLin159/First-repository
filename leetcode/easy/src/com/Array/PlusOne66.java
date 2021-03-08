@@ -8,16 +8,18 @@ public class PlusOne66 {
             //未发生进位，则直接加1后退出循环
             if (digits[i] < 9) {
                 digits[i] += 1;
-                break;
+                break;//显然没有产生进位，退出，第二次写的时候又忘了。
             }
             //若发生进位，则还要进行循环
             digits[i] = 0;
         }
         //如果最高位变成了0，则需要扩张数组
+        //以下例子为[9,9,9] -> [1,0,0,0]
         if (digits[0] == 0) {
-            int[] ans = new int[digits.length + 1];//这里默认隐藏最低位为0
+            int[] ans = new int[digits.length + 1];//这里java默认扩张后的那一位隐藏最低位为0
             ans[0] = 1;
-            digits = ans;
+            digits = ans;//很显然数据变成了digit[1,digits.length个0];
+
         }
 
         return digits;
