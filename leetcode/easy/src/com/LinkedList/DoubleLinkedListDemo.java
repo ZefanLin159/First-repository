@@ -2,76 +2,69 @@ package com.LinkedList;
 
 public class DoubleLinkedListDemo {
     public static void main(String[] args) {
-        DoubleNode newNode = new DoubleNode(1);
+        DoubleNode n1 = new DoubleNode(1);
+        DoubleNode n2 = new DoubleNode(2);
+        DoubleNode n3 = new DoubleNode(3);
+        DoubleNode n4 = new DoubleNode(4);
         DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
-        doubleLinkedList.addData(newNode);
-//        System.out.println(doubleLinkedList);
+        doubleLinkedList.addData(n1);
+        doubleLinkedList.addData(n2);
+        doubleLinkedList.addData(n3);
+        doubleLinkedList.addData(n4);
         doubleLinkedList.list();
     }
 }
 
 class DoubleLinkedList {
-    private DoubleNode head = new DoubleNode(0, null, null);
+    private DoubleNode head = new DoubleNode();
+    private DoubleNode tail = new DoubleNode();
+    int size = 0;
 
     public boolean isEmpty() {
-        boolean isEmptyFlag = true;
-        if (head.next != null) {
-            isEmptyFlag = false;
+        boolean flag = false;
+        if (head.next == null) {
+            flag = true;
         }
-        return isEmptyFlag;
+        return flag;
     }
 
     public void addData(DoubleNode newNode) {
         DoubleNode temp = head;
-        if (head.next == null) {
+        if (this.isEmpty()) {
             temp.next = newNode;
-            temp = temp.next;
-            temp.next = null;
-            temp.pre = null;
+            newNode.pre = null;//首个结点不指向头结点
         } else {
-          while (temp.next != null) {
-              temp  = temp.next;
-          }
-          temp.next = newNode;
-          temp.next.pre = temp;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+            newNode.pre = temp;
+
         }
+        tail.pre = newNode;
+        size++;
     }
-
-
 
     public void list() {
         for (DoubleNode p = head.next; p != null; p = p.next) {
-            System.out.println(p);
+            System.out.println(p.val);
+        }
+        for(DoubleNode p = tail.pre;p!=null;p = p.pre){
+            System.out.println(p.val);
         }
     }
-
 }
 
-
 class DoubleNode {
-    int val;
     DoubleNode pre;
+    int val;
     DoubleNode next;
 
-    public DoubleNode(int val, DoubleNode pre, DoubleNode next) {
-        this.val = val;
-        this.pre = pre;
-        this.next = next;
+    public DoubleNode() {
     }
 
     public DoubleNode(int val) {
         this.val = val;
     }
 
-    public DoubleNode() {
-    }
-
-    @Override
-    public String toString() {
-        return "DoubleNode{" +
-                "val=" + val +
-                ", pre=" + pre +
-                ", next=" + next +
-                '}';
-    }
 }

@@ -8,6 +8,13 @@ class SingleLinkedLink{
 
     public void addData(SingleNode newNode){
         SingleNode temp = head;
+        if(head.next == null){
+            temp.next = newNode;
+            temp = temp.next;
+            temp.next = head.next;
+        }else {
+
+        }
 
     }
 
