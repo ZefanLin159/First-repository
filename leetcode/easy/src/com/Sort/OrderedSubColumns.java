@@ -29,11 +29,10 @@ public class OrderedSubColumns {
     }
 
     /**
-     *
-     * @param num1      传入的数组
-     * @param lStart    左端的起始位置
-     * @param lEnd      左端的结束位置
-     * @param rEnd      右端的结束位置
+     * @param num1   传入的数组
+     * @param lStart 左端的起始位置
+     * @param lEnd   左端的结束位置
+     * @param rEnd   右端的结束位置
      */
     public static void merge(int[] num1, int lStart, int lEnd, int rEnd) {
         int low = lStart;//记录初始子列最左边的位置，还不理解
