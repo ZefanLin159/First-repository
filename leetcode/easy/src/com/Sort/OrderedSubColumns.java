@@ -35,10 +35,9 @@ public class OrderedSubColumns {
      * @param rEnd   右端的结束位置
      */
     public static void merge(int[] num1, int lStart, int lEnd, int rEnd) {
-        int low = lStart;//记录初始子列最左边的位置，还不理解
-        //另一个技巧，陈越姥姥的指导
+        //记录元素长度，后面会有用
         int numElement = rEnd - lStart + 1;
-        //这里还是申请O(N)的复杂度
+        //这里还是申请O(N)的空间复杂度
         int[] newNum = new int[num1.length];
         int rStart = lEnd + 1;
         int i = 0;
