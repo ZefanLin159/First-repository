@@ -5,14 +5,13 @@ import java.util.Arrays;
 public class MySort {
     public static void main(String[] args) {
         int[] n1 = {34, 8, 64, 51, 32, 21};
-        MySort mySort = new MySort();
-        n1 = mySort.SelectionSort(n1, n1.length);
+        BubbleSort(n1, n1.length);
 //        n1 = mySort.InsertSort(n1, n1.length);
 //        n1 = mySort.BubbleSort(n1, n1.length);
         System.out.println(Arrays.toString(n1));
     }
 
-    public int[] InsertSort(int[] num1, int length) {
+    public static void InsertSort(int[] num1, int length) {
         int i, j;
         //i = 1默认第一张牌已经插入，必然有序
         for (i = 1; i < length; i++) {
@@ -27,10 +26,9 @@ public class MySort {
             num1[j] = temp;
 
         }
-        return num1;
     }
 
-    public int[] BubbleSort(int[] num1, int length) {
+    public static void BubbleSort(int[] num1, int length) {
         int i, j;
         //这里做一个优化，如果初始是有序的数组了,则flag为true，也就是 第一趟 下来没有进行过任何交换
         boolean flag = true;
@@ -48,14 +46,13 @@ public class MySort {
             if (flag) break;
         }
 
-        return num1;
     }
 
-    public int[] SelectionSort(int[] num1, int length) {
+    public static void SelectionSort(int[] num1, int length) {
         int i, j;
         int maxIndex = 0;
-        for(i = length-1;i>0;i--) {
-            for (j = 0; j < i+1; j++) {
+        for (i = length - 1; i > 0; i--) {
+            for (j = 0; j < i + 1; j++) {
                 //选择排序法注意这里是找到最大值下标
                 if (num1[j] > num1[maxIndex]) {
                     maxIndex = j;
@@ -66,7 +63,9 @@ public class MySort {
             num1[i] = num1[maxIndex];
             num1[maxIndex] = tmp;
         }
-        return num1;
+
+
     }
+
 
 }
