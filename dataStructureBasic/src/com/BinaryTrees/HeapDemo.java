@@ -20,6 +20,7 @@ public class HeapDemo {
 }
 
 class Heap {
+    //1
     int[] elementTypes;
     int size;
     private int capacity;
