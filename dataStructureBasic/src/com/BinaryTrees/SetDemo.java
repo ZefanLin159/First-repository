@@ -20,6 +20,8 @@ public class SetDemo {
         int maxSize = setType.length;
         for (; i < maxSize && setType[i].elementTypes != x; i++) ;
         if (i >= maxSize) return -1;
+        //找到树根，返回树根的下标，结束条件是不满足树根结点的位置
+        //在此处就是parent的下标为-1
         for (; setType[i].parent >= 0; i = setType[i].parent) ;
         return i;
     }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class HeapDemo {
     public static void main(String[] args) {
-        Heap maxHeap = new Heap(5);
+        MaxHeap maxHeap = new MaxHeap(5);
         maxHeap.insertHeapValue(maxHeap, 58);
         maxHeap.insertHeapValue(maxHeap, 44);
         maxHeap.insertHeapValue(maxHeap, 25);
@@ -13,19 +13,18 @@ public class HeapDemo {
         maxHeap.insertHeapValue(maxHeap, 31);
         //这里返回的数组没有删除堆末的元素,不过size确实变小了，所以暂时理解为合理
         maxHeap.deleteHeapValue(maxHeap);
-        maxHeap.insertHeapValue(maxHeap,1);
+        maxHeap.insertHeapValue(maxHeap, 1);
         System.out.println(Arrays.toString(maxHeap.elementTypes));
     }
 
 }
 
-class Heap {
-    //1
+class MaxHeap {
     int[] elementTypes;
     int size;
     private int capacity;
 
-    public Heap(int capacity) {
+    public MaxHeap(int capacity) {
         this.capacity = capacity;
         this.size = 0;
         //+1是给一个哨兵的空间，哨兵的空间不包含在size和capacity里面
@@ -42,7 +41,7 @@ class Heap {
      * @param heap  传入堆，注意堆的首元素是哨兵
      * @param value 传入要插入的值
      */
-    public void insertHeapValue(Heap heap, int value) {
+    public void insertHeapValue(MaxHeap heap, int value) {
         int i;
         int heapSize = heap.getSize();
         if (heapSize == heap.capacity) {
@@ -64,7 +63,7 @@ class Heap {
 
     //删除最大堆元素
     //先保留完全性，再调整有序性
-    public int deleteHeapValue(Heap heap) {
+    public int deleteHeapValue(MaxHeap heap) {
         int parent, child;
         int maxData = 0, temp;
         int heapSize = heap.getSize();
