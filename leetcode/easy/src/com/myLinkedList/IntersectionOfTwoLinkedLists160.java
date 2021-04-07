@@ -13,6 +13,7 @@ public class IntersectionOfTwoLinkedLists160 {
         }
         return a;
     }
+
     public static void main(String[] args) {
 
     }
