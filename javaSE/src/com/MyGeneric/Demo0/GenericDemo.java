@@ -1,4 +1,4 @@
-package com.MyGeneric;
+package com.MyGeneric.Demo0;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package com.MyGeneric;
+package com.MyGeneric.Demo0;
 
 //创建泛型
 public class MyGeneric<T> {

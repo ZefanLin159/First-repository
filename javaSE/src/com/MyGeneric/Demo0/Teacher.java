@@ -1,4 +1,4 @@
-package com.MyGeneric;
+package com.MyGeneric.Demo0;
 
 public class Teacher {
     private int age;
