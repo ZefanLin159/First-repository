@@ -44,20 +44,5 @@ public class TwoSum01 {
     }
 
 
-    public static int[] twoSumSolution1(int[] nums, int target) throws Exception {
-        HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
-        for (int i = 0; i < nums.length; i++) {
-            hm.put(nums[i], i);
-        }
-        for (int j = 0; j < nums.length; j++) {
-            int val = target - nums[j];
-            //get()返回指定键映射到的值，如果此映射不包含键的映射，则返回 null
-            //containValue()如果此映射将一个或多个键映射到指定值，则返回 true
-            if (hm.containsKey(val) && hm.get(val) != j) {
-                return new int[]{hm.get(val), j};
-            }
-        }
-        throw new IllegalArgumentException("xxx");
 
-    }
 }
