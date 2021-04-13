@@ -1,8 +1,9 @@
-package com.MyIOStream;
+package com.MyIOStream.MyFileStream;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 /*
     异常的几个处理方法
@@ -18,6 +19,8 @@ public class FileOutputStreamDemo4 {
         try {
             fos = new FileOutputStream("e:\\Program\\javaSE\\src\\com\\MyIOStream\\fos4.txt");
             fos.write("Hello".getBytes());
+            fos.write("\n".getBytes());
+            fos.write("World".getBytes());
         } catch (IOException e) {
             e.printStackTrace();//输出信息是最全的
         } finally {

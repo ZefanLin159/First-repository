@@ -1,4 +1,4 @@
-package com.MyIOStream;
+package com.MyIOStream.MyFileStream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

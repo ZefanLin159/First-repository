@@ -1,4 +1,4 @@
-package com.MyIOStream;
+package com.MyIOStream.MyFileStream;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -21,6 +21,7 @@ public class FileInputStreamDemo2 {
             if (fis != null) {
                 try {
                     fis.close();
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
