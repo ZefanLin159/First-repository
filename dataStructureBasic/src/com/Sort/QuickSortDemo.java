@@ -89,21 +89,10 @@ public class QuickSortDemo {
             QuickSortRecursion(nums, left, i - 1);
             QuickSortRecursion(nums, i + 1, right);
         } else {
-            InsertSortPra(nums, nums.length);
+            MySort.InsertSort(nums, nums.length);
         }
     }
 
-    public static void InsertSortPra(int[] nums, int length) {
-        int i, j;
-        for (i = 1; i < length; i++) {
-            int temp = nums[i];
-            for (j = i; j > 0 && nums[j - 1] > temp; j--) {
-                nums[j] = nums[j - 1];
-            }
-            nums[j] = temp;
-        }
 
-
-    }
 }
 

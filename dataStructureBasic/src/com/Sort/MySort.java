@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class MySort {
     public static void main(String[] args) {
         int[] n1 = {34, 8, 64, 51, 32, 21};
-        BubbleSort(n1, n1.length);
-//        n1 = mySort.InsertSort(n1, n1.length);
+//        BubbleSort(n1, n1.length);
+        InsertSort(n1, n1.length);
 //        n1 = mySort.BubbleSort(n1, n1.length);
         System.out.println(Arrays.toString(n1));
     }
@@ -16,11 +16,11 @@ public class MySort {
         //i = 1默认第一张牌已经插入，必然有序
         for (i = 1; i < length; i++) {
             int temp = num1[i];//摸下一张牌
-            //内层倒序遍历，并且判断条件是前面牌大于寄存器的牌（存储的是原本最新插的牌）
+            //内层逆序遍历，并且判断退出条件是前面牌（有序）大于摸下来的新牌（存储的是原本最新插的牌）
             for (j = i; j > 0 && num1[j - 1] > temp; j--) {
                 //移出空牌
                 num1[j] = num1[j - 1];
-                System.out.println(Arrays.toString(num1));
+//                System.out.println(Arrays.toString(num1));
             }
             //插牌
             num1[j] = temp;
@@ -64,7 +64,10 @@ public class MySort {
             num1[maxIndex] = tmp;
         }
 
+    }
 
+    public static void shellSort(int[] nums, int length) {
+        
     }
 
 
