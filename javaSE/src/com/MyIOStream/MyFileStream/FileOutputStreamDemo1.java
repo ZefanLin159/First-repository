@@ -7,7 +7,7 @@ import java.io.IOException;
 public class FileOutputStreamDemo1 {
     public static void main(String[] args) throws IOException {
         //创建字节输出流对象
-        FileOutputStream fos = new FileOutputStream("E:\\Program\\javaSE\\src\\com\\MyIOStream\\fos.txt");
+        FileOutputStream fos = new FileOutputStream("src\\com\\MyIOStream\\fos.txt");
         /**
          * 1.调用系统功能创捷了文件
          * 2.创建了字节输出流对象

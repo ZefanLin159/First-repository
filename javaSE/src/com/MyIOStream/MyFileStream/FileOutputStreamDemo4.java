@@ -17,7 +17,7 @@ public class FileOutputStreamDemo4 {
 
         FileOutputStream fos = null;
         try {
-            fos = new FileOutputStream("e:\\Program\\javaSE\\src\\com\\MyIOStream\\fos4.txt");
+            fos = new FileOutputStream("src\\com\\MyIOStream\\fos4.txt");
             fos.write("Hello".getBytes());
             fos.write("\n".getBytes());
             fos.write("World".getBytes());

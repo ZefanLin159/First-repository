@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 
 public class FileOutputStreamDemo2 {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos = new FileOutputStream("E:\\Program\\javaSE\\src\\com\\MyIOStream\\fos.txt");
+        FileOutputStream fos = new FileOutputStream("src\\com\\MyIOStream\\fos.txt");
         //等价写法
 //        FileOutputStream fos2 = new FileOutputStream(new File("E:\\Program\\javaSE\\src\\com\\MyIOStream\\fos.txt"));
 

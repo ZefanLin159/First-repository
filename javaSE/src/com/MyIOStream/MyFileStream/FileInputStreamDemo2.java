@@ -10,7 +10,7 @@ public class FileInputStreamDemo2 {
         FileOutputStream fos = null;
         try {
             fis = new FileInputStream("E:\\itCast\\copyTest.txt");
-            fos = new FileOutputStream("E:\\Program\\javaSE\\src\\com\\MyIOStream\\pasteTest.txt");
+            fos = new FileOutputStream("src\\com\\MyIOStream\\pasteTest.txt");
             int by;
             while ((by = fis.read()) != -1) {
                 fos.write(by);

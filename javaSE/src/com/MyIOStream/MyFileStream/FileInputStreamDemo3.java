@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class FileInputStreamDemo3 {
     public static void main(String[] args) throws IOException {
-        FileInputStream fis = new FileInputStream("E:\\Program\\javaSE\\src\\com\\MyIOStream\\fos4.txt");
+        FileInputStream fis = new FileInputStream("src\\com\\MyIOStream\\fos4.txt");
 /*
         byte[] by = new byte[5];
 

@@ -16,7 +16,7 @@ public class FileOutputStreamDemo3 {
 
     public static void main(String[] args) throws IOException {
         //true实现追加写入
-        FileOutputStream fos = new FileOutputStream("E:\\Program\\javaSE\\src\\com\\MyIOStream\\fos3.txt", true);
+        FileOutputStream fos = new FileOutputStream("src\\com\\MyIOStream\\fos3.txt", true);
 
         for (int i = 0; i < 5; i++) {
             fos.write("我是谁".getBytes(StandardCharsets.UTF_8));

@@ -9,7 +9,7 @@ public class FileInputStreamDemo1 {
 
         FileInputStream fis = null;
         try {
-            fis = new FileInputStream("E:\\Program\\javaSE\\src\\com\\MyIOStream\\fos4.txt");
+            fis = new FileInputStream("src\\com\\MyIOStream\\fos4.txt");
             int by;
             //读取技巧，和c一样
             while ((by = fis.read()) != -1) {
