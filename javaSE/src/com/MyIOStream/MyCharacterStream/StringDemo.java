@@ -16,6 +16,5 @@ public class StringDemo {
         String ss2 = new String(bytes1, "GBK");
         System.out.println(ss2);//输出乱码，因为本平台默认使用UTF-8的编码，所以用GBK解码会有问题
 
-
     }
 }
