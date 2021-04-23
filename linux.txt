@@ -1,0 +1,8 @@
+一些常用指令：
+sudo su root 		进入root
+sudo 管理员权限
+touch 创建文件
+//详细看菜鸟教程
+
+
+
