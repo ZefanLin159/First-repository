@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class MyClassDemo {
     public static void main(String[] args) throws ClassNotFoundException {
-        Employee e = new Employee("zf", 5000.0, 1994, 11, 04);
+        Employee e = new Employee("zf", 49,5000.0, 1989, 10, 1);
         Class cl = e.getClass();//获得类名
         String name1 = e.getName();
         System.out.println(e.getClass().getName() + ":" + name1);

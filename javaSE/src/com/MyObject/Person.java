@@ -1,6 +1,8 @@
 package com.MyObject;
 
-public abstract class Person {
+import java.util.Comparator;
+
+public abstract class Person implements Comparable<Employee>{
     public abstract String getDescription();
     private String name;
 
@@ -11,4 +13,6 @@ public abstract class Person {
     public String getName() {
         return name;
     }
+
+    public abstract int compareTo(Employee other);
 }
