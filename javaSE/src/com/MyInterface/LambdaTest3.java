@@ -24,6 +24,6 @@ public class LambdaTest3 {
             };
         }
     }
-    
+
 
 }
