@@ -1,4 +1,4 @@
-package com.myThread;
+package com.myThread.Demo1;
 
 public class MyMainThreadDemo {
     public static void main(String[] args) {
