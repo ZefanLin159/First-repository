@@ -5,6 +5,12 @@ import java.util.List;
 import java.util.Stack;
 
 public class BinaryTreeInorderTraversal94 {
+
+    public static void main(String[] args) {
+
+    }
+
+
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
@@ -24,4 +30,5 @@ public class BinaryTreeInorderTraversal94 {
         }
         return list;
     }
+
 }
