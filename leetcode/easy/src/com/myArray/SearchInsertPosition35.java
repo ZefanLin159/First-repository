@@ -20,6 +20,27 @@ public class SearchInsertPosition35 {
         }
         return i;
     }
+
+    public int searchInsert1(int[] nums, int target) {
+        int index = 0;
+        for(int i = 0;i<nums.length;i++){
+            if(i+1 != nums.length){
+                if(target>nums[i] && target <=nums[i+1]){
+                    index = i+1;
+                    break;
+                }
+            }else{
+                //这里要注意分两种情况，一种是等于的索引，一种是大于的索引
+                if(target ==nums[i]){
+                    index = i;
+                }else if(target > nums[i]){
+                    index = i+1;
+                }
+            }
+        }
+        return index;
+    }
+
     public static void main(String[] args) {
 
     }

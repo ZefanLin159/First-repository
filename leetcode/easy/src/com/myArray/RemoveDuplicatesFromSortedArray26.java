@@ -2,6 +2,42 @@ package com.myArray;
 
 
 public class RemoveDuplicatesFromSortedArray26 {
+    public static int removeDuplicates1(int[] nums){
+        int count = 0;
+        int temp = nums[nums.length-1];
+        for(int i = nums.length-1,j = nums.length-1;i>=0;){
+            if(nums[j] != nums[i]){
+                i--;
+            }
+        }
+
+        return count;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void main(String[] args) {
+
+    }
+
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
         //快慢针解法，i在j前面一位来进行处理,
@@ -15,10 +51,6 @@ public class RemoveDuplicatesFromSortedArray26 {
             }
         }
         return i + 1;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
 
