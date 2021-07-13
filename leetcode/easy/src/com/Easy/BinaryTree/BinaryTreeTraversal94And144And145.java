@@ -10,24 +10,24 @@ public class BinaryTreeTraversal94And144And145 {
 
     }
 
-
     public List<Integer> inorderTraversal94(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        recursiveInorder(root, list);
+        return list;
+    }
+
+    public void recursiveInorder(TreeNode p, List<Integer> list) {   //这里递归返回空值就行，因为已经有list的了
+        if (p == null) return;
+        recursiveInorder(p.left, list);
+        list.add(p.val);
+        recursiveInorder(p.right, list);
+    }
+
+    public List<Integer> inorderTraversal94_2(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
 
         TreeNode temp = root;
-//        while (temp != null || stack.isEmpty() == false) {
-//            while (temp != null) {
-//                stack.push(temp);
-//                temp = temp.left;
-//            }
-//            if (!stack.isEmpty()) {
-//                temp = stack.pop();
-//                list.add(temp.val);
-//                temp = temp.right;
-//            }
-//
-//        }
         while (temp != null || stack.isEmpty() == false) {
             if (temp != null) {
                 stack.push(temp);
@@ -61,14 +61,14 @@ public class BinaryTreeTraversal94And144And145 {
         return list;
     }
 
-    public List<Integer> postorderTraversal(TreeNode root) {
+    public List<Integer> postorderTraversal145(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         TreeNode temp = root;
         while (temp != null && !stack.isEmpty()) {
-            if(temp!=null){
+            if (temp != null) {
 
-            }else {
+            } else {
 
             }
         }
