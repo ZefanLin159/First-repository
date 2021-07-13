@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+<!--form 表单
+    method:get 可以再url看到提交的信息，高效不安全,post：比较安全，可以传输大文件
+     -->
+<form action="1.OurFirstWeb.html" method="get">
+    <!--文本输入框input 类型type:text、password...
+    maxlength="8" 最大长度
+    size="30" 文本框长度
+    value="defaultText" 文本框中初始内容-->
+    <p>名字：<input type="text" name="username" placeholder="请输入用户名" required></p>
+    <p>密码：<input type="password" name="password"></p>
+    <!--    input type:单选框标签
+            value:控件组的值
+            name：控件组名（同组只能选一个）
+            checked：默认效果-->
+    <!--    p标签：自定义段落-->
+    <p>性别：<input type="radio" value="boy" name="sex" checked/>男
+        <input type="radio" value="girl" name="sex"/>女
+    </p>
+
+    <!--  input type="checkbox" 多选框-->
+    <p>爱好：
+        <input type="checkbox" value="sleep" name="hobby">睡觉
+        <input type="checkbox" value="code" name="hobby">敲代码
+        <input type="checkbox" value="chat" name="hobby">聊天
+        <input type="checkbox" value="game" name="hobby">游戏
+    </p>
+    <!--   图片 按键 按钮-->
+    <p>
+        <input type="button" name="btn1" value="点击我变帅">
+
+        <!--    图片按钮    <input type="image" src="../html/resources/picture/gujian3.jpg">-->
+    </p>
+
+    <!--    下拉框、列表框-->
+    <p>国籍：
+        <select name="列表名称" id="">
+            <option value="China">中国</option>
+            <option value="England">英国</option>
+            <option value="America">美国</option>
+            <option value="Russia">俄罗斯</option>
+        </select>
+    </p>
+    <!--    文本域-->
+    <p>反馈：
+        <textarea name="textarea" cols="30" rows="10">文本内容</textarea>
+    </p>
+    <!--    文件域-->
+    <p>
+        <input type="file" name="files">
+        <input type="button" name="upload" value="上传">
+    </p>
+    <!--邮件验证-->
+    <p>
+        邮箱: <input type="email" name="email">
+    </p>
+
+    <!--    url-->
+    <p>
+        url:<input type="url" name="url">
+    </p>
+    <!--    数字验证-->
+    <p>
+        商品数量:<input type="number" name="num" max="1000" min="0" step="10">
+    </p>
+    <!--    滑块-->
+    <p>
+        音量:<input type="range" min="0" max="100" step="1" name="voice">
+    </p>
+<!--    搜索框-->
+    <p>
+        搜索: <input type="search" name="search">
+    </p>
+<!--    增强鼠标可用性-->
+    <label for="mark">你点我试试</label>
+    <input type="text" id = "mark">
+
+    <input type="submit" value="登录">
+    <input type="reset" value="清空表单">
+
+
+</form>
+</body>
+</html>
