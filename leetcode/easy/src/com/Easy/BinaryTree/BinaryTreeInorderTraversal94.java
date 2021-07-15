@@ -4,12 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class BinaryTreeTraversal94And144And145 {
+public class BinaryTreeInorderTraversal94 {
 
     public static void main(String[] args) {
-
+        TreeNode head = new TreeNode(1);
+        TreeNode node = new TreeNode(2);
+        head.left = node;
+        TreeNode node1 = new TreeNode(3);
+        head.right = node1;
+        TreeNode node2 = new TreeNode(4);
+        head.left.left = node2;
+        TreeNode node3 = new TreeNode(5);
+        head.left.right = node3;
+        TreeNode node4 = new TreeNode(6);
+        head.right.left = node4;
+        TreeNode node5 = new TreeNode(7);
+        head.right.right = node5;
     }
 
+    //中序遍历递归
     public List<Integer> inorderTraversal94(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         recursiveInorder(root, list);
@@ -23,6 +36,7 @@ public class BinaryTreeTraversal94And144And145 {
         recursiveInorder(p.right, list);
     }
 
+    //中序遍历迭代
     public List<Integer> inorderTraversal94_2(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
@@ -41,39 +55,8 @@ public class BinaryTreeTraversal94And144And145 {
         return list;
     }
 
-    public List<Integer> preorderTraversal144(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode temp = root;
-        while (temp != null || !stack.isEmpty()) {//这里是or
-            //前序和中序的区别  在于list.add位置的区别，切记，切记
-            if (temp != null) {
-                list.add(temp.val);
-                stack.push(temp);
-                temp = temp.left;
-            } else {
-//            if(!stack.isEmpty()){//前序遍历不能利用栈来判断，只能用temp指向来判断，eg[1,null,2,3];
-                temp = stack.pop();
-                temp = temp.right;
-            }
-        }
 
-        return list;
-    }
 
-    public List<Integer> postorderTraversal145(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode temp = root;
-        while (temp != null && !stack.isEmpty()) {
-            if (temp != null) {
 
-            } else {
-
-            }
-        }
-
-        return list;
-    }
 
 }
