@@ -20,18 +20,19 @@ public class BalancedBinaryTree110 {
     }
 
     public boolean isBalanced_2(TreeNode root) {
-        return maxDepth_2(root) != Integer.MIN_VALUE;
+        return maxDepth_2(root) != -1;
     }
 
     public int maxDepth_2(TreeNode p) {
         if (p == null) return 0;
         int left = maxDepth_2(p.left);
+        if(left == -1) return -1;
         int right = maxDepth_2(p.right);
-        if (Math.abs(left - right) > 1) return Integer.MIN_VALUE;
-        if(left == Integer.MIN_VALUE) return Integer.MIN_VALUE;
-        if(right == Integer.MIN_VALUE) return Integer.MIN_VALUE;
+        if(right == -1) return -1;
+        if(Math.abs(left-right)>1) return -1;
 
-        return Math.max(maxDepth_2(p.left), maxDepth_2(p.right)) + 1;
+        //前面已经用了一个寄存器得出来递归值了，不要重复递归！！！
+        return Math.max(left, right) + 1;
 
     }
 }
