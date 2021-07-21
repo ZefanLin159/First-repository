@@ -2,7 +2,7 @@ package com.Easy.BinaryTree;
 
 public class ConvertSortedArrayToBinarySearchTree108 {
     public TreeNode sortedArrayToBST(int[] nums) {
-        return sortedArrayToBSTRecursive(nums,0,nums.length-1);
+        return sortedArrayToBSTRecursive(nums,0,nums.length-1);//左闭右开
     }
 
     public TreeNode sortedArrayToBSTRecursive(int[] nums,int left,int right){
