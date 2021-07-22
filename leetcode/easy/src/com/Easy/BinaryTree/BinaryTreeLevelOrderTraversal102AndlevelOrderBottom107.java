@@ -27,21 +27,21 @@ class BinaryTreeLevelOrderTraversal102AndLevelOrderBottom107 {
 
     public static List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
-        if (root == null) return res;
+        if (root == null) return res;   //这个判断一定不能少
         Queue<TreeNode> queue = new LinkedList<>();
         TreeNode temp = root;
         queue.offer(root);
-        while (!queue.isEmpty()) {
+        while (!queue.isEmpty()) {//层序遍历只需要一层
             int count = queue.size();//更新当前层队列的尺寸
             List<Integer> list1 = new ArrayList<>();
             while (count-- > 0) {
-                temp = queue.poll();
+                temp = queue.poll();//记得获取当前指针的头部！练习的时候忘了
                 list1.add(temp.val);//加入当前层的元素
                 if (temp.left != null) {
                     queue.offer(temp.left);//加入当前层的左子树
                 }
                 if (temp.right != null) {
-                    queue.add(temp.right);//加入当前层的右子树
+                    queue.offer(temp.right);//加入当前层的右子树
                 }
 
             }
@@ -67,10 +67,11 @@ class BinaryTreeLevelOrderTraversal102AndLevelOrderBottom107 {
                 if (cur.right != null) queue.offer(cur.right);
 
             }
-            res.add(0,list);
+            res.add(0, list);
         }
         return res;
     }
+
 
 
 }
