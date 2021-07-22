@@ -1,0 +1,31 @@
+#nav{
+    width: 300px;
+    background: #94936c;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+    background: red;
+    /*颜色 链接 坐标 平铺方式*/
+    background: red url("../image/arrow.jpg") 270px 10px no-repeat;
+}
+/*ul{*/
+/*}*/
+/*list-style none去掉远点*/
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent: 2em;
+
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+a hover{
+    color: orange;
+    text-decoration: underline;
+}

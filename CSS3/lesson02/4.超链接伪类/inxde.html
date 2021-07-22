@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /*鼠标悬浮的颜色*/
+        a:hover{
+            color: red;
+            font-size: 20px;
+        }
+        /*鼠标按住未释放的状态*/
+        a:active{
+            color: green;
+        }
+        /*访问过后的颜色*/
+        a:visited{
+            color: blue;
+        }
+        /*text-shadow：阴影颜色，水平偏移，垂直偏移，阴影半径*/
+        #price{
+            text-shadow: #3cc7f5 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+<a href="#">
+    <img src="santi.jpg" alt="">
+</a>
+
+<p>
+    <a href="#">三体</a>
+</p>
+<p>
+    <a href=""> 作者：刘慈欣</a>
+</p>
+<p id = "price">
+    ￥99元
+</p>
+</body>
+</html>
