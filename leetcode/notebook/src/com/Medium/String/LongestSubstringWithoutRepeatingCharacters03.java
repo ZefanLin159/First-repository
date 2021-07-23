@@ -8,7 +8,8 @@ public class LongestSubstringWithoutRepeatingCharacters03 {
     public static void main(String[] args) {
         String s = "pwwkew";
         String s1 = "abcabca";
-        System.out.println(lengthOfLongestSubstring(s));
+        String test = "abcdeff";
+        System.out.println(lengthOfLongestSubstring(test));
     }
 
     //错误的做法
@@ -33,6 +34,8 @@ public class LongestSubstringWithoutRepeatingCharacters03 {
     }
 
     public static int lengthOfLongestSubstring(String s) {
+
+//        String test = "abcdeff";最坏情况，时间复杂度为O（2n）
         int count = 0;
         int length = s.length();
         Set<Character> set = new HashSet<>();
@@ -44,6 +47,7 @@ public class LongestSubstringWithoutRepeatingCharacters03 {
                 set.add(s.charAt(j++));
                 count = Math.max(count, j - i);
             } else {
+                //删除似乎是有序的
                 set.remove(s.charAt(i++));
             }
         }
