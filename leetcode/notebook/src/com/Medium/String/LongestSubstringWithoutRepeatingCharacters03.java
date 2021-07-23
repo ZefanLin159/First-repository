@@ -1,13 +1,18 @@
 package com.Medium.String;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingCharacters03 {
     public static void main(String[] args) {
         String s = "pwwkew";
+        String s1 = "abcabca";
         System.out.println(lengthOfLongestSubstring(s));
     }
-    public static int lengthOfLongestSubstring(String s) {
+
+    //错误的做法
+    public static int lengthOfLongestSubstring_error(String s) {
         if (s.length() == 0 || s.length() == 1) return s.length();
         int count = 1;
 //        StringBuffer sb = new StringBuffer();
@@ -19,10 +24,28 @@ public class LongestSubstringWithoutRepeatingCharacters03 {
             if (s.charAt(fast) == s.charAt(slow)) {
                 char temp = s.charAt(fast);
                 char temp2 = s.charAt(slow);
-                count = Math.max(fast - slow,count);
+                count = Math.max(fast - slow, count);
                 slow = fast;
             }
 
+        }
+        return count;
+    }
+
+    public static int lengthOfLongestSubstring(String s) {
+        int count = 0;
+        int length = s.length();
+        Set<Character> set = new HashSet<>();
+        int i = 0, j = 0;
+        while (i < length && j < length) {
+            if (!set.contains(s.charAt(j))) {
+//                我们一般说HashSet是无序的，它既不能保证存储和取出顺序一致，更不能保证自然顺序
+                char temp = s.charAt(j);
+                set.add(s.charAt(j++));
+                count = Math.max(count, j - i);
+            } else {
+                set.remove(s.charAt(i++));
+            }
         }
         return count;
     }
