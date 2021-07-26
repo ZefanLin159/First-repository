@@ -47,7 +47,7 @@ public class LongestSubstringWithoutRepeatingCharacters03 {
                 set.add(s.charAt(j++));
                 count = Math.max(count, j - i);
             } else {
-                //删除似乎是有序的
+                //删除的是i索引对应的字符
                 set.remove(s.charAt(i++));
             }
         }
