@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 方式1
+        function abs(x){
+            return x >= 0 ? x : -x;
+        }
+        // 方式二
+        var abs = function (x){
+            if(typeof x!== 'number') throw "not a number";
+            return x >= 0 ? x : -x;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
