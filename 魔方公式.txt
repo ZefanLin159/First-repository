@@ -5,3 +5,7 @@
 奇数十字公式
 
 2R2 B2 U2 2L U2 2R' U2 2R U2 F2 2R F2 2L' B2 2R2
+
+五阶特殊公式
+
+Rw2 B2 U2 Lw U2 Rw' U2 Rw U2 F2 Rw F2 Lw' B2 Rw2
