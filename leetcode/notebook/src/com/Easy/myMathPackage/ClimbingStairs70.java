@@ -2,7 +2,7 @@ package com.Easy.myMathPackage;
 
 public class ClimbingStairs70 {
     public static void main(String[] args) {
-        System.out.println(climbStairs1(7));
+        System.out.println(climbStairs2(9));
     }
 
     //Recursion
@@ -58,5 +58,27 @@ public class ClimbingStairs70 {
 //        }
 //        return dp;
 
+
+    }
+
+    public static int climbStairs2(int n) {
+//        int[] dp = new int[n];
+//        dp[0] = 1;
+//        dp[1] = 1;
+//        dp[2] = 1;
+//        for(int i = 3;i<n;i++){
+//            dp[i] = dp[i-2]+dp[i-3];
+//        }
+//        return dp[n-1];
+        if (n == 1 || n == 2 || n == 3) return 1;
+        int dp = 0;
+        int n1 = 1, n2 = 1, n3 = 1;
+        for (int i = 3; i < n; i++) {
+            dp = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+            n3 = dp;
+        }
+        return dp;
     }
 }
