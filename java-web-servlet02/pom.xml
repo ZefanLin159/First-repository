@@ -11,6 +11,7 @@
     <modules>
         <module>servlet01</module>
         <module>servlet02</module>
+        <module>response</module>
     </modules>
 
     <properties>
