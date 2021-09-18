@@ -14,4 +14,20 @@
         <url-pattern>/fd</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>com.lzf.servlet.ImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/img</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>rd</servlet-name>
+        <servlet-class>com.lzf.servlet.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rd</servlet-name>
+        <url-pattern>/rd</url-pattern>
+    </servlet-mapping>
 </web-app>
