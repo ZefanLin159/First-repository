@@ -12,6 +12,7 @@
         <module>servlet01</module>
         <module>servlet02</module>
         <module>response</module>
+        <module>request</module>
     </modules>
 
     <properties>
@@ -33,7 +34,34 @@
             <version>2.3.3</version>
             <scope>provided</scope>
         </dependency>
-
+<!--&lt;!&ndash;        网上找的jsp包&ndash;&gt;-->
+<!--        &lt;!&ndash;引入Servlet开始&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>javax.servlet</groupId>-->
+<!--            <artifactId>javax.servlet-api</artifactId>-->
+<!--            <version>3.1.0</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash;引入Servlet结束&ndash;&gt;-->
+<!--        &lt;!&ndash;引入jsp相关开始&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>javax.servlet.jsp</groupId>-->
+<!--            <artifactId>jsp-api</artifactId>-->
+<!--            <version>2.2</version>-->
+<!--        </dependency>-->
+        <!--引入jsp相关结束-->
+        <!--引入Javaee7开始-->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+        </dependency>
+        <!--引入Javaee7结束-->
+        <!--引入JSTL开始-->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
 
     </dependencies>
 

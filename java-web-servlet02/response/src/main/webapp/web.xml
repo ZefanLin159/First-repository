@@ -30,4 +30,12 @@
         <servlet-name>rd</servlet-name>
         <url-pattern>/rd</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>requestTest</servlet-name>
+        <servlet-class>com.lzf.servlet.RequestTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestTest</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
 </web-app>
