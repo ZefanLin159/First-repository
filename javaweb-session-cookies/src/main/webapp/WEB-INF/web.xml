@@ -14,6 +14,17 @@
         <servlet-name>CookieDemo1</servlet-name>
         <url-pattern>/cd1</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CookieDemo2</servlet-name>
+        <servlet-class>com.lzf.servlet.CookiesDemo02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieDemo2</servlet-name>
+        <url-pattern>/cd2</url-pattern>
+    </servlet-mapping>
+
+
     <servlet>
         <servlet-name>CookieDemo3</servlet-name>
         <servlet-class>com.lzf.servlet.CookiesDemo03</servlet-class>
@@ -23,5 +34,36 @@
         <url-pattern>/cd3</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>sessionDemo01</servlet-name>
+        <servlet-class>com.lzf.servlet.SessionDemo01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sessionDemo01</servlet-name>
+        <url-pattern>/sd1</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>sessionDemo02</servlet-name>
+        <servlet-class>com.lzf.servlet.SessionDemo02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sessionDemo02</servlet-name>
+        <url-pattern>/sd2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sessionDemo03</servlet-name>
+        <servlet-class>com.lzf.servlet.SessionDemo03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sessionDemo03</servlet-name>
+        <url-pattern>/sd3</url-pattern>
+    </servlet-mapping>
+
+<!--    设置session默认的自动失效时间-->
+    <session-config>
+<!--        20分钟后session自动失效,以分钟为单位-->
+        <session-timeout>20</session-timeout>
+    </session-config>
 </web-app>

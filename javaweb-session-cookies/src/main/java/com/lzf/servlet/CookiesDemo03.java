@@ -9,14 +9,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
-import java.util.Date;
-
-import static java.lang.System.out;
 
 //中文设置传递
 public class CookiesDemo03 extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         req.setCharacterEncoding("utf-8");
         resp.setCharacterEncoding("utf-8");
         //      cookie，服务端从客户端获取
@@ -26,16 +23,17 @@ public class CookiesDemo03 extends HttpServlet {
         if (reqCookies != null) {
 //            如果存在cookie，怎么办
             out.write("你上一次访问的时间是");
-//            for (Cookie cookie:cookies) {
-//
-//            }
-            for (int i = 0; i < reqCookies.length; i++) {
-                Cookie cookie = reqCookies[i];
-//                获取cookie的名字
+/*
+ for (Cookie cookie:cookies) {
+
+ }
+*/
+            for (Cookie cookie : reqCookies) {
+                //                获取cookie的名字
                 if (cookie.getName().equals("name")) {
 //                    out.println(cookie.getValue());
                     //解决乱码的一种方式
-                    URLDecoder.decode(cookie.getValue(),"utf-8")
+                    URLDecoder.decode(cookie.getValue(), "utf-8");
                     out.write(cookie.getValue());
                 }
             }
@@ -50,5 +48,6 @@ public class CookiesDemo03 extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+       doGet(req, resp);
     }
 }
