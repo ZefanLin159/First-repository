@@ -60,4 +60,10 @@
         <servlet-name>sessionDemo03</servlet-name>
         <url-pattern>/sd3</url-pattern>
     </servlet-mapping>
+
+<!--    设置session默认的自动失效时间-->
+    <session-config>
+<!--        20分钟后session自动失效,以分钟为单位-->
+        <session-timeout>20</session-timeout>
+    </session-config>
 </web-app>

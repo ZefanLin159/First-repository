@@ -12,6 +12,7 @@ import java.util.Date;
 public class CookiesDemo02 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         //创建一个cookie，名字必须要和要删除的名字一直
         Cookie newCookie = new Cookie("lastLoginTime", System.currentTimeMillis() + "");
         newCookie.setMaxAge(0);
