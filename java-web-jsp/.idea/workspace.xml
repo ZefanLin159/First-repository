@@ -10,34 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b054202-bfaa-49f1-b4b5-0f9b3ddd6b7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/java_web_jsp_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-web-jsp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/error/404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/error/500.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/error404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/error500.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsp2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsp3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jspTag.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jspTag2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pageContextDemo01.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-session-cookies/src/main/webapp/hello.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../environmentalvar/什么是环境变量.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-web-servlet02/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-web-servlet02/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-session-cookies/src/main/java/com/lzf/servlet/CookiesDemo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-session-cookies/src/main/java/com/lzf/servlet/CookiesDemo02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-session-cookies/target/classes/com/lzf/servlet/CookiesDemo02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-session-cookies/target/classes/com/lzf/servlet/CookiesDemo02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-session-cookies/target/javaweb-session-cookies-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-session-cookies/target/javaweb-session-cookies-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-session-cookies/target/javaweb-session-cookies-1.0-SNAPSHOT/WEB-INF/classes/com/lzf/servlet/CookiesDemo02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-session-cookies/target/javaweb-session-cookies-1.0-SNAPSHOT/WEB-INF/classes/com/lzf/servlet/CookiesDemo02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-session-cookies/target/javaweb-session-cookies-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-session-cookies/target/javaweb-session-cookies-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/java-web-jsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lzf/entity/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/coreif.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/javaBean.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_jsp_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_jsp_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_web_jsp_war_exploded/jsp3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_web_jsp_war_exploded/jsp3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp3.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,15 +54,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -91,6 +82,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.52" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.52" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -189,6 +191,13 @@
       <updated>1632213397394</updated>
       <workItem from="1632213398749" duration="16049000" />
       <workItem from="1632404129818" duration="1632000" />
+      <workItem from="1632701718585" duration="1065000" />
+      <workItem from="1632798839105" duration="1861000" />
+      <workItem from="1632819284857" duration="4937000" />
+      <workItem from="1632905672586" duration="81000" />
+      <workItem from="1632905908300" duration="1179000" />
+      <workItem from="1632907210902" duration="36000" />
+      <workItem from="1632907277149" duration="5508000" />
     </task>
     <servers />
   </component>
