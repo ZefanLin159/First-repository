@@ -9,34 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b054202-bfaa-49f1-b4b5-0f9b3ddd6b7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/filter/sysFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/servlet/loginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/servlet/logoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/util/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-filter/web/sys/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/src/main/java/com/lzf/jdbc/testJdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/src/main/java/com/lzf/jdbc/testJdbc2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-jdbc/src/main/java/com/lzf/jdbc/testJdbc3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/481843c1-d533-499c-98ab-9f4516c8630a.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/481843c1-d533-499c-98ab-9f4516c8630a/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/481843c1-d533-499c-98ab-9f4516c8630a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/481843c1-d533-499c-98ab-9f4516c8630a/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/out/artifacts/javaweb_filter_war_exploded/WEB-INF/classes/com/lzf/filter/CharacterEncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/out/artifacts/javaweb_filter_war_exploded/WEB-INF/classes/com/lzf/filter/CharacterEncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/out/artifacts/javaweb_filter_war_exploded/WEB-INF/classes/com/lzf/filter/ShowServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/out/artifacts/javaweb_filter_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/out/artifacts/javaweb_filter_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/out/artifacts/javaweb_filter_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/out/artifacts/javaweb_filter_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/filter/ShowServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/servlet/ShowServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/listener/OnlineCountListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/src/main/java/com/lzf/listener/OnlineCountListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/target/classes/com/lzf/filter/CharacterEncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/target/classes/com/lzf/filter/CharacterEncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/target/classes/com/lzf/filter/ShowServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-filter/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-filter/web/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="0b054202-bfaa-49f1-b4b5-0f9b3ddd6b7f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,6 +189,7 @@
       <workItem from="1632907277149" duration="5508000" />
       <workItem from="1633166481617" duration="276000" />
       <workItem from="1633167181170" duration="10000" />
+      <workItem from="1633527217561" duration="145000" />
     </task>
     <servers />
   </component>
