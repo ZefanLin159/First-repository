@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>ShowServlet</servlet-name>
-        <servlet-class>com.lzf.filter.ShowServlet</servlet-class>
+        <servlet-class>com.lzf.servlet.ShowServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ShowServlet</servlet-name>
@@ -15,7 +15,7 @@
 
     <servlet>
         <servlet-name>showServlet</servlet-name>
-        <servlet-class>com.lzf.filter.ShowServlet</servlet-class>
+        <servlet-class>com.lzf.servlet.ShowServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>showServlet</servlet-name>
@@ -31,5 +31,37 @@
         <filter-name>CharacterEncodingFilter</filter-name>
 <!--        只要是servlet下面的任何请求都会经过过滤器 通配符的用法（一般不使用）-->
         <url-pattern>/servlet/*</url-pattern>
+    </filter-mapping>
+    
+
+
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+    
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.lzf.servlet.loginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/servlet/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>com.lzf.servlet.logoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/servlet/logout</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>sysFilter</filter-name>
+        <filter-class>com.lzf.filter.sysFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>sysFilter</filter-name>
+        <url-pattern>/sys/*</url-pattern>
     </filter-mapping>
 </web-app>
