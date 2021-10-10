@@ -41,13 +41,14 @@ public class BaseDao {
     }
 
     //编写查询公共类
-    public static ResultSet executeC(Connection connection, String sql, Object[] params) throws SQLException {
+    public static ResultSet executeC(Connection connection,String sql, Object[] params) throws SQLException {
+
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         for (int i = 0; i < params.length; i++) {
 //            setObject，占位符从1开始，但是我们的数组是从0开始
             preparedStatement.setObject(i + 1, params[i]);
         }
-        ResultSet resultSet = preparedStatement.executeQuery(sql);
+        ResultSet resultSet = preparedStatement.executeQuery();
         return resultSet;
     }
 
