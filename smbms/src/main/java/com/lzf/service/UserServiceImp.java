@@ -7,6 +7,7 @@ import com.lzf.pojo.User;
 import org.junit.Test;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public class UserServiceImp implements UserService{
 //    业务层都会调用dao层，所以我们要引入dao层；
@@ -21,9 +22,21 @@ public class UserServiceImp implements UserService{
 
         connection = BaseDao.getConnection();
 //        通过业务层调用对应的具体的数据库操作
-        User loginUser = userDao.getLoginUser(connection, userCode);
+        User loginUser = null;
+        try {
+            loginUser = userDao.getLoginUser(connection, userCode);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         BaseDao.closeResource(connection,null,null);
         return loginUser;
+    }
+
+    public int updatePwd(int id, int password) {
+        Connection connection = null;
+        connection = BaseDao.getConnection();
+//        修改密码
+        return 0;
     }
 
     @Test
