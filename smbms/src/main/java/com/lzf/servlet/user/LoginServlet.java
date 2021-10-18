@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
 //        和数据库中的密码进行对比，调用业务层
         UserServiceImp userServiceImp = new UserServiceImp();
         User isUser = userServiceImp.login(userCode, userPassword);//这里已经把登录的人查询出来了
-        if(isUser != null){//查有此人，可以登录
+        if(isUser != null  && userPassword!=null && userPassword.equals(isUser.getUserPassword())){//查有此人，可以登录
             //将用户的信息放到session中
             req.getSession().setAttribute(Constants.USER_SESSION,isUser);
             //跳转到内部主页，重定向

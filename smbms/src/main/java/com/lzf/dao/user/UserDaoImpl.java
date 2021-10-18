@@ -40,7 +40,7 @@ public class UserDaoImpl implements UserDao {
         return user;
     }
 
-    public int updatePwd(Connection connection, int id, int password) throws SQLException {
+    public int updatePwd(Connection connection, int id, String password) throws SQLException {
         int executeRUD = 0;
         if (connection != null) {
             String sql = "update smbms_user set userPassword = ? where id = ?";

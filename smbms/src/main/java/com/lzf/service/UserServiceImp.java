@@ -32,11 +32,21 @@ public class UserServiceImp implements UserService{
         return loginUser;
     }
 
-    public int updatePwd(int id, int password) {
+    public boolean updatePwd(int id, String password) {
+        boolean flag = false;
         Connection connection = null;
         connection = BaseDao.getConnection();
 //        修改密码
-        return 0;
+        try {
+            if(userDao.updatePwd(connection,id,password)>0){
+                flag = true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            BaseDao.closeResource(connection,null,null);
+        }
+        return flag;
     }
 
     @Test
