@@ -1,8 +1,7 @@
 package com.lzf.servlet.user;
 
 import com.lzf.pojo.User;
-import com.lzf.service.UserService;
-import com.lzf.service.UserServiceImp;
+import com.lzf.service.user.UserServiceImp;
 import com.lzf.utils.Constants;
 
 import javax.servlet.ServletException;
