@@ -1,7 +1,6 @@
 package com.lzf.util;
 
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -14,10 +13,12 @@ public class MybatisUtils {
     private static SqlSessionFactory sqlSessionFactory = null;
     static {
         //获取sqlSessionFactory对象(官网）
-        String resource = "mybatis-config.xml";
         try {
+
+        String resource = "mybatis-config.xml";//初始就加载
             InputStream inputStream = Resources.getResourceAsStream(resource);
-           sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+            //工厂就是为了创建东西
+            sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
         }

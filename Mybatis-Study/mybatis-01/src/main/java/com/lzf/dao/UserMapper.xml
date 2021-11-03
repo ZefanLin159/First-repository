@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 绑定一个dao（mapper接口）-->
+<mapper namespace="com.lzf.dao.UserMapper">
+<!--    id对应方法名 resultType返回泛型（方法返回值）-->
+    <select id="getUserList" resultType="com.lzf.pojo.User">
+        select * from mybatis.user
+    </select>
+    
+    <select id="getUserById" resultType="com.lzf.pojo.User" parameterType="int">
+        select * from mybatis.user where `id` = #{id}
+    </select>
+
+    <insert id="addUser" parameterType="com.lzf.pojo.User" >
+        insert into mybatis.user(id,name,pwd) values (#{id},#{name},#{pwd});
+    </insert>
+
+    <insert id="addUser2" parameterType="Map">
+        insert into mybatis.user(id,name,pwd) values (#{id},#{name},#{password});
+    </insert>
+
+    <update id="updateUser" parameterType="com.lzf.pojo.User">
+        update user
+        set name = #{name},pwd=#{pwd}
+        where id = #{id};
+    </update>
+
+    <delete id="deleteUser" parameterType="com.lzf.pojo.User">
+        delete from USER
+        where id = #{id};
+    </delete>
+
+<!--    模糊查询，怎么避免sql注入-->
+    <select id="getUserLike" resultType="com.lzf.pojo.User">
+        select * from user where name like #{value};
+    </select>
+
+</mapper>
