@@ -17,9 +17,6 @@
         insert into mybatis.user(id,name,pwd) values (#{id},#{name},#{pwd});
     </insert>
 
-    <insert id="addUser2" parameterType="Map">
-        insert into mybatis.user(id,name,pwd) values (#{id},#{name},#{password});
-    </insert>
 
     <update id="updateUser" parameterType="com.lzf.pojo.User">
         update user
@@ -32,9 +29,5 @@
         where id = #{id};
     </delete>
 
-<!--    模糊查询，怎么避免sql注入-->
-    <select id="getUserLike" resultType="com.lzf.pojo.User">
-        select * from user where name like "%" #{value} "%";
-    </select>
 
 </mapper>
