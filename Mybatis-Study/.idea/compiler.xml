@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Mybatis-03" />
         <module name="Mybatis-02" />
+        <module name="Mybatis-05" />
+        <module name="Mybatis-04" />
         <module name="mybatis-01" />
       </profile>
     </annotationProcessing>

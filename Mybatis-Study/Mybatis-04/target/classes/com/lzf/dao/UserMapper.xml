@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 绑定一个dao（mapper接口）-->
+<mapper namespace="com.lzf.dao.UserMapper">
+    <resultMap id="UserMap" type="com.lzf.pojo.User">
+        <result column="pwd" property="passwords"/>
+    </resultMap>
+
+<!--    id对应方法名 resultType返回泛型（方法返回值）-->
+    <select id="getUserById" resultMap="UserMap">
+        select * from mybatis.user where id = #{id}
+    </select>
+
+<!--    分页(注意类型别名，看配置文件查）-->
+    <select id="getUserByLimit" parameterType="map" resultType="user" resultMap="UserMap">
+        select * from mybatis.user limit #{startIndex},#{pageSize};
+    </select>
+
+
+</mapper>
