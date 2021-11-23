@@ -9,12 +9,33 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Mybatis-05</artifactId>
+    <artifactId>Mybatis-06</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

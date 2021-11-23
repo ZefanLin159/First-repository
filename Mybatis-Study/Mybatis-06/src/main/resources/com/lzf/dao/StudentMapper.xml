@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 绑定一个dao（mapper接口）-->
+<mapper namespace="com.lzf.dao.StudentMapper">
+    <!--按照查询嵌套处理-->
+    <!--难点！！！-->
+    <select id="getStudent" resultMap="StudentAndTeacher">
+        select *
+        from student;
+    </select>
+    <resultMap id="StudentAndTeacher" type="Student">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <!--        复杂的属性，我们需要单独处理
+         对象：association
+         集合：collection
+         -->
+        <!--property就是type所代表的Student中的成员变量，而这个select就是下面用来坐查询的getTeacher，
+        javaType要和下面的resultType对应-->
+        <association property="teacher" column="tid" javaType="Teacher" select="getTeacher"/>
+    </resultMap>
+    <select id="getTeacher" resultType="Teacher">
+        select *
+        from teacher
+        where id = #{tid}
+    </select>
+
+    <!--按照结果嵌套处理-->
+    <select id="getStudent2" resultMap="StudentAndTeacher2">
+        select s.id sid, s.name sname, t.name tname
+        from student s,
+             teacher t
+        where s.tid = t.id
+    </select>
+
+    <resultMap id="StudentAndTeacher2" type="Student">
+        <result property="id" column="sid"/>
+        <result property="name" column="sname"/>
+        <!-- 按照结果找到老师对应的name association看官方文档-->
+        <association property="teacher" javaType="Teacher">
+            <result property="name" column="tname"/>
+        </association>
+    </resultMap>
+
+</mapper>
