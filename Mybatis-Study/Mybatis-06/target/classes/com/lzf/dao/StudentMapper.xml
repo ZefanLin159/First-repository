@@ -38,7 +38,7 @@
     <resultMap id="StudentAndTeacher2" type="Student">
         <result property="id" column="sid"/>
         <result property="name" column="sname"/>
-        <!-- 按照结果 association看官方文档-->
+        <!-- 按照结果找到老师对应的name association看官方文档-->
         <association property="teacher" javaType="Teacher">
             <result property="name" column="tname"/>
         </association>
