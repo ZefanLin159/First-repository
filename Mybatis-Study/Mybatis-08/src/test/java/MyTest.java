@@ -53,4 +53,22 @@ public class MyTest {
         sqlSession.close();
     }
 
+    @Test
+    public void queryBlogChoose(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("title","java如此简单2");
+        map.put("author","狂神");
+        map.put("id","2b9457ff83c7451d8568b33e3a4b6e45");
+        map.put("views",9999);
+//        List<Blog> blogList = mapper.queryBlogChoose(map);
+        int i = mapper.updateBlog(map);
+//        for (Blog blog : blogList) {
+//            System.out.println(blog);
+//        }
+
+        sqlSession.close();
+    }
+
 }
