@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- services -->
+
+<!--    无参构造-->
+<!--  <bean id="user" class="com.lzf.pojo.User">-->
+<!--      <property name="name" value="老林"></property>-->
+<!--  </bean>-->
+<!--    有参构造-->
+<!--    索引匹配-->
+<!--    <bean id="user" class="com.lzf.pojo.User">-->
+<!--        <constructor-arg  value="老林"/>-->
+<!--    </bean>-->
+
+<!--    参数名对应-->
+    <bean id="user" class="com.lzf.pojo.User">
+        <constructor-arg name="name" value="狂神"/>
+    </bean>
+
+    <alias name="user" alias="user2"/>
+
+<!--    id:bean 唯一标识符，也就是相当于我们学的对象名-->
+<!--    class：bean对象所对应的全限定名：包名+类型-->
+<!--    name：也是别名，而且name可以取多个别名-->
+    <bean id="userT" class="com.lzf.pojo.UserT" name="user3,user4">
+        <property name="name" value="西部开源"/>
+    </bean>
+</beans>
