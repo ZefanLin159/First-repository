@@ -13,6 +13,8 @@
         <module>springMVC-02-hellomvc</module>
         <module>springMVC-02-helloMVC3</module>
         <module>springmvc-03-annotation</module>
+        <module>springmvc-04-controller</module>
+        <module>springmvc-05-json</module>
     </modules>
 
     <dependencies>
@@ -42,6 +44,18 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+
     </dependencies>
     <build>
         <resources>

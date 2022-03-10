@@ -1,0 +1,25 @@
+# 这个配置文件中可以配置的东西
+# 官方的配置太多了
+# 了解原理：一通百通
+# 普通的keyValue
+# 可以注入到我们的配置类中
+server:
+  port: 8080
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8081
+spring:
+  config:
+    activate:
+      on-profile: dev
+---
+server:
+  port: 8082
+spring:
+  config:
+    activate:
+      on-profile: test
+---
