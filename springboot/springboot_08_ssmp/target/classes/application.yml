@@ -16,4 +16,4 @@ mybatis-plus:
       table-prefix: tbl_
       id-type: auto # sql????
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #????//?????
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #配置日志信息

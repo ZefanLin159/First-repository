@@ -5,10 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianZhi03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi28.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi52.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi53.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/books.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/elementui/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/elementui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/IBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/IBookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/IBookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/test-classes/com/lzf/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/test-classes/com/lzf/service/BookServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +77,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Application.jianZhi06">
+  <component name="RunManager" selected="Application.jianzhi53">
     <configuration name="jianZhi03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzf.easy.jianZhi03" />
       <module name="jianzhi" />
@@ -89,8 +124,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="jianzhi53" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.jianzhi53" />
+      <module name="jianzhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzf.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jianzhi53" />
         <item itemvalue="Application.jianZhi06" />
         <item itemvalue="Application.jianZhi05" />
         <item itemvalue="Application.jianzhi04" />
@@ -113,6 +162,7 @@
       <workItem from="1647099133933" duration="1587000" />
       <workItem from="1647137157804" duration="731000" />
       <workItem from="1647341531342" duration="638000" />
+      <workItem from="1647526966043" duration="7605000" />
     </task>
     <servers />
   </component>
@@ -130,5 +180,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/jianzhi53.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

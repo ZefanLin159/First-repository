@@ -17,5 +17,5 @@ public interface BookService {
 
     List<Book> getAllBook();
 
-    IPage<Book> getPage(int currentPage, int pageSize);
+//    IPage<Book> getPage(int currentPage, int pageSize);
 }
