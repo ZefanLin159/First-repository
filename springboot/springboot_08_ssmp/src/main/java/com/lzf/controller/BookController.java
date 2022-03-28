@@ -1,5 +1,6 @@
 package com.lzf.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.lzf.controller.utils.R;
 import com.lzf.domain.Book;
 import com.lzf.service.IBookService;
@@ -42,7 +43,13 @@ public class BookController {
 
     @GetMapping("{currentPage}/{pageSize}")
     public R getPage(@PathVariable int currentPage, @PathVariable int pageSize) {
-        return new R(iBookService.getPage(currentPage, pageSize), true);
+        IPage<Book> page = iBookService.getPage(currentPage, pageSize);
+//        如果当前页码值大于了总页码值，那么重新执行查询操作，使用页码值作为页码值
+        if (currentPage > page.getPages()) {
+//            更新page
+            page = iBookService.getPage( 1, pageSize);
+        }
+        return new R(page, true);
     }
 
 }

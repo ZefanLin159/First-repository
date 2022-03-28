@@ -5,45 +5,137 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi28.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi52.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi53.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/axios-0.18.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/elementui/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/elementui/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/config/AlphaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/AlphaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/AlphaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/AlphaDaoHibernateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/DiscussPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/DiscussPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/DiscussPostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/servlet/AlphaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/servlet/AlphaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/mapper/discusspost-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/mapper/user-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/css/discuss-detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/css/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/css/letter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/html/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/img/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/img/captcha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/img/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/js/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/js/letter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/js/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/static/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/demo/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/mail/activation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/mail/forget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/admin/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/discuss-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/error/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/followee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/follower.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/forget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/letter-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/letter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/my-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/my-reply.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/operate-result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/text.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/CommunityApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/dao/MapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/src/main/java/com/lzf/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mavenDemo2/src/test/java/com/lzf/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/artifacts/redis_miaosha_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/redis-miaosha.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/src/main/java/com/lzf/SecKillServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/src/main/java/com/lzf/SecKill_redis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/web/script/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/src/main/java/com/lzf/JedisDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/src/main/java/com/lzf/PhoneCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/artifacts/springboot_redis_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_58.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_58.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_58.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_spring_web_5_3_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/springboot-redis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/src/main/java/com/lzf/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/src/main/java/com/lzf/controller/RedisTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/com/lzf/SpringbootRedisApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/com/lzf/config/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/com/lzf/controller/RedisTestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/test-classes/com/lzf/SpringbootRedisApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-web-servlet02/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-web-servlet02/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/BookServiceImpl2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/service/IBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/BookServiceImpl2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/IBookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/service/IBookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/test-classes/com/lzf/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/test-classes/com/lzf/service/BookServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/jianzhi53.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/easy/jianzhi53.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/utils/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/utils/R.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/static/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/static/pages/books.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,21 +162,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../community" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Application.jianzhi53">
-    <configuration name="jianZhi03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.jianZhi03" />
-      <module name="jianzhi" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.jianZhi21">
     <configuration name="jianZhi05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzf.easy.jianZhi05" />
       <module name="jianzhi" />
@@ -103,7 +188,20 @@
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.*" />
+          <option name="PATTERN" value="com.lzf.easy.Array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jianZhi21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Array.jianZhi21" />
+      <module name="jianzhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzf.easy.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,7 +227,7 @@
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.*" />
+          <option name="PATTERN" value="com.lzf.easy.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jianZhi21" />
         <item itemvalue="Application.jianzhi53" />
         <item itemvalue="Application.jianZhi06" />
         <item itemvalue="Application.jianZhi05" />
         <item itemvalue="Application.jianzhi04" />
-        <item itemvalue="Application.jianZhi03" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +260,9 @@
       <workItem from="1647099133933" duration="1587000" />
       <workItem from="1647137157804" duration="731000" />
       <workItem from="1647341531342" duration="638000" />
-      <workItem from="1647526966043" duration="7605000" />
+      <workItem from="1647526966043" duration="8199000" />
+      <workItem from="1648390738536" duration="1454000" />
+      <workItem from="1648433968846" duration="631000" />
     </task>
     <servers />
   </component>
@@ -180,16 +280,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/lzf/easy/jianzhi53.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

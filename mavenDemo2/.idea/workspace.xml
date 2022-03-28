@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19cb3680-ec9a-4788-a8a9-ec6c52a574c4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lzf/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lzf/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/artifacts/redis_miaosha_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/redis-miaosha.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/src/main/java/com/lzf/SecKillServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/src/main/java/com/lzf/SecKill_redis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redis/redis-miaosha/web/script/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/src/main/java/com/lzf/JedisDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/redis/src/main/java/com/lzf/PhoneCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/artifacts/springboot_redis_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_58.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_58.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_58.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_spring_web_5_3_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/springboot-redis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/src/main/java/com/lzf/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/src/main/java/com/lzf/controller/RedisTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/com/lzf/SpringbootRedisApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/com/lzf/config/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/classes/com/lzf/controller/RedisTestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/target/test-classes/com/lzf/SpringbootRedisApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot-redis/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/ProjectExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-web-servlet02/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-web-servlet02/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jianzhi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jianzhi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/java/com/lzf/controller/utils/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/src/main/resources/static/pages/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/utils/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/com/lzf/controller/utils/R.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/static/pages/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot/springboot_08_ssmp/target/classes/static/pages/books.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\work\repository" />
+        <option name="userSettingsFile" value="D:\work\environment\apache-maven-3.8.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="26pqA8cYrqYWNPwp7eQhYKAp7V4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.App" />
+      <module name="mavenDemo2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19cb3680-ec9a-4788-a8a9-ec6c52a574c4" name="Changes" comment="" />
+      <created>1648130729577</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648130729577</updated>
+      <workItem from="1648130730837" duration="989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
