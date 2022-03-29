@@ -27,6 +27,18 @@ spring:
       maximum-pool-size: 15
       minimum-idle: 5
       connection-timeout: 30000
+  #    MailProperties
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 915654746@qq.com
+    password: akuuxlkwmjghbffi
+    protocol: smtps
+    properties: # mail.smtp.ssl.enable=true
+      mail:
+        smtp:
+          ssl:
+            enable: true
 # mybatis 配置
 mybatis:
   mapper-locations: classpath:mapper/*.xml
@@ -42,3 +54,8 @@ logging:
     com.newcorder.community: # debug 这个包级别是debug
   file:
     path: d:/work/data/newcoder/community.log
+
+# community(diy)
+community:
+  path:
+    domain: http://localhost:8080

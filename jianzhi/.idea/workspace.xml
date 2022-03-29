@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/LoggerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi39.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi29.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CommunityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/MailClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/mail/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/MailTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/mail/activation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/mail/activation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/operate-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/operate-result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/jianzhi04.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi21.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lzf/medium/jianzhi04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianzhi04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +145,7 @@
       <workItem from="1647526966043" duration="8199000" />
       <workItem from="1648390738536" duration="1454000" />
       <workItem from="1648433968846" duration="631000" />
-      <workItem from="1648475371069" duration="4919000" />
+      <workItem from="1648475371069" duration="6109000" />
     </task>
     <servers />
   </component>
