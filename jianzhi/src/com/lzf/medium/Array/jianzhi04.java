@@ -1,4 +1,4 @@
-package com.lzf.medium;
+package com.lzf.medium.Array;
 
 public class jianzhi04 {
     public static void main(String[] args) {

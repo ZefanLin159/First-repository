@@ -9,13 +9,13 @@ spring:
     cache: false
     prefix: classpath:/templates/
     suffix: .html
-#    servlet:
-#      content-type: text/html
-#    encoding: UTF-8
-#    mode: HTML
+  #    servlet:
+  #      content-type: text/html
+  #    encoding: UTF-8
+  #    mode: HTML
 
-#    spring.mvc.static-path-pattern=/**
-#    spring.resources.static-locations=classpath:/static/
+  #    spring.mvc.static-path-pattern=/**
+  #    spring.resources.static-locations=classpath:/static/
   # DataSourceProperties
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -39,5 +39,6 @@ mybatis:
 # logger
 logging:
   level:
-    com.newcorder.community: debug
-
+    com.newcorder.community: # debug 这个包级别是debug
+  file:
+    path: d:/work/data/newcoder/community.log
