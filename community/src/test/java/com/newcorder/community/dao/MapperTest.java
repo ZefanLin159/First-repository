@@ -3,7 +3,10 @@ package com.newcorder.community.dao;
 
 import com.newcorder.community.CommunityApplication;
 import com.newcorder.community.entity.DiscussPost;
+import com.newcorder.community.entity.LoginTicket;
 import com.newcorder.community.entity.User;
+import com.newcorder.community.util.CommunityConstant;
+import com.newcorder.community.util.CommunityUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,6 +24,9 @@ public class MapperTest {
     @Autowired
     private DiscussPostMapper discussPostMapper;
 
+    @Autowired
+    private LoginTicketMapper loginTicketDao;
+
     @Test
     public void testSelectUser() {
         User user = userMapper.selectById(101);
@@ -33,10 +39,13 @@ public class MapperTest {
 
     @Test
     public void testUpdateUser() {
-        int i = userMapper.updateStatus(101, 1);
+//        int i = userMapper.updateStatus(101, 1);
 //        http://images.nowcoder.com/head/100t.png
-        int i1 = userMapper.updateHeader(101, "http://images.nowcoder.com/head/100t.png");
-        userMapper.updatePassword(101, "390ba5f6b5f18dd4c63d7cda170a0c74");
+//        userMapper.updatePassword(101, "390ba5f6b5f18dd4c63d7cda170a0c74");
+        User user = userMapper.selectById(149);
+
+        userMapper.updatePassword(149, CommunityUtil.md5("123") + user.getSalt());
+        userMapper.updateHeader(149, "http://images.nowcoder.com/head/199t.png");
 
     }
 
@@ -62,5 +71,24 @@ public class MapperTest {
 //        System.out.println(list);
         int row = discussPostMapper.selectDiscussPostRows(0);
         System.out.println(row);
+    }
+
+    @Test
+    public void testInsertLoginTicket() {
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setUserId(101);
+        loginTicket.setTicket("abc");
+        loginTicket.setStatus(0);
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + 1000 * 60 * 10));
+        loginTicketDao.insertLoginTicket(loginTicket);
+    }
+
+    @Test
+    public void testSelectLoginTicket() {
+        LoginTicket loginTicket = loginTicketDao.selectByTicket("abc");
+        System.out.println(loginTicket);
+        loginTicketDao.updateStatus("abc", 1);
+        loginTicket = loginTicketDao.selectByTicket("abc");
+        System.out.println(loginTicket);
     }
 }

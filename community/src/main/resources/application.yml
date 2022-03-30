@@ -2,6 +2,9 @@
 server:
   servlet:
     context-path: /community
+#    session:
+  #      cookie:
+  #        secure: off
   port: 8080
 # thymeleaf config
 spring:
