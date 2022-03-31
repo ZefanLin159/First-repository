@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/Interceptor/AlphaInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/Interceptor/LoginTicketInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CookieUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/HostHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi50.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi58_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi58_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi53_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi53_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +56,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Application.jianZhi53_1">
-    <configuration name="jianZhi42" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Array.jianZhi42" />
+  <component name="RunManager" selected="Application.jianZhi58_2">
+    <configuration name="jianZhi50" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.myString.jianZhi50" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.Array.*" />
+          <option name="PATTERN" value="com.lzf.easy.myString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi57" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Array.jianZhi57" />
+    <configuration name="jianZhi58_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.myString.jianZhi58_1" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.Array.*" />
+          <option name="PATTERN" value="com.lzf.easy.myString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi61" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Array.jianZhi61" />
+    <configuration name="jianZhi58_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.myString.jianZhi58_2" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.Array.*" />
+          <option name="PATTERN" value="com.lzf.easy.myString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jianZhi58_2" />
+        <item itemvalue="Application.jianZhi58_1" />
+        <item itemvalue="Application.jianZhi50" />
         <item itemvalue="Application.jianZhi53_1" />
         <item itemvalue="Application.jianZhi53_2" />
-        <item itemvalue="Application.jianZhi61" />
-        <item itemvalue="Application.jianZhi57" />
-        <item itemvalue="Application.jianZhi42" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +150,7 @@
       <workItem from="1647526966043" duration="8199000" />
       <workItem from="1648390738536" duration="1454000" />
       <workItem from="1648433968846" duration="631000" />
-      <workItem from="1648475371069" duration="22501000" />
+      <workItem from="1648475371069" duration="27988000" />
     </task>
     <servers />
   </component>
@@ -215,18 +209,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
-          <line>34</line>
+          <line>56</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
-          <line>31</line>
+          <line>53</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi58_1.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi58_2.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
