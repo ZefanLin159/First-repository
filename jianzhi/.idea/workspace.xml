@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi53_2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi57.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi61.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi57.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi61.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/Interceptor/AlphaInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/Interceptor/LoginTicketInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/HostHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/setting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi42.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi42.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +156,7 @@
       <workItem from="1647526966043" duration="8199000" />
       <workItem from="1648390738536" duration="1454000" />
       <workItem from="1648433968846" duration="631000" />
-      <workItem from="1648475371069" duration="21683000" />
+      <workItem from="1648475371069" duration="22501000" />
     </task>
     <servers />
   </component>
@@ -214,6 +217,16 @@
           <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
           <line>8</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

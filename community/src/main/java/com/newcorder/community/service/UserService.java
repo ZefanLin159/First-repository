@@ -45,6 +45,10 @@ public class UserService implements CommunityConstant {
         this.userMapper = userMapper;
     }
 
+    public LoginTicket findLoginTicket(String ticket) {
+        return loginTicketMapper.selectByTicket(ticket);
+    }
+
     public void logout(String ticket) {
 //        staus = 1表示凭证失效
         loginTicketMapper.updateStatus(ticket, 1);
@@ -166,6 +170,10 @@ public class UserService implements CommunityConstant {
 
     public User findById(int id) {
         return userMapper.selectById(id);
+    }
+
+    public int updateHeader(int userId, String headerUrl) {
+        return userMapper.updateHeader(userId, headerUrl);
     }
 
 //    public User findByName(String username) {

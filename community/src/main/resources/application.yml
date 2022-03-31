@@ -2,7 +2,7 @@
 server:
   servlet:
     context-path: /community
-#    session:
+  #    session:
   #      cookie:
   #        secure: off
   port: 8080
@@ -54,7 +54,9 @@ mybatis:
 # logger
 logging:
   level:
-    com.newcorder.community: # debug 这个包级别是debug
+    com:
+      newcorder:
+        community:  debug # 这个包级别是debug
   file:
     path: d:/work/data/newcoder/community.log
 
@@ -62,3 +64,4 @@ logging:
 community:
   path:
     domain: http://localhost:8080
+    upload: d:/work/data/upload
