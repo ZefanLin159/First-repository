@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi50.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi58_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi58_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi28.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi53_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Array/jianZhi53_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/easy/Array/jianZhi53_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,7 +5,7 @@ public class jianZhi53_1 {
     public static void main(String[] args) {
         jianZhi53_1 jianZhi53_1 = new jianZhi53_1();
 //        System.out.println(jianZhi53_2.missingNumber(new int[]{0, 1, 3}));
-//        System.out.println(jianZhi53_1.search(new int[]{5, 7, 7, 8, 8, 10}, 8));
+//        System.out.println(jianZhi55_1.search(new int[]{5, 7, 7, 8, 8, 10}, 8));
         System.out.println(jianZhi53_1.search(new int[]{5, 7, 7, 7, 7, 10}, 7));
 
     }
