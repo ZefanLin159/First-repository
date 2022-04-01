@@ -1,5 +1,6 @@
 package com.newcorder.community.controller;
 
+import com.newcorder.community.annotation.LoginRequired;
 import com.newcorder.community.entity.User;
 import com.newcorder.community.service.UserService;
 import com.newcorder.community.util.CommunityUtil;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StreamUtils;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -48,6 +50,7 @@ public class UserController {
     }
 
 
+    @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
     public String getSettingPage() {
 
@@ -55,6 +58,7 @@ public class UserController {
     }
 
     /*上传头像*/
+    @LoginRequired
     @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImage, Model model) {
 //        如果为空，必然是前端没有传值
@@ -115,6 +119,32 @@ public class UserController {
         } catch (IOException e) {
             logger.error("读取头像失败" + e.getMessage());
         }
+    }
+
+    //    修改密码后怎么退出，后续需要思考
+    @RequestMapping(path = "/changePwd", method = RequestMethod.POST)
+    @LoginRequired
+    public String changePwd(@CookieValue("ticket") String ticket, String oldPassword,
+                            String newPassword, String confirmPwd, Model model) {
+        User user = hostHolder.getUser();
+        if (!user.getPassword().equals(CommunityUtil.md5(oldPassword) + user.getSalt())) {
+            model.addAttribute("passwordMsg", "密码不正确，修改失败");
+            return "site/setting";
+        } else {
+
+            if (newPassword == null) {
+                model.addAttribute("newPasswordMsg", "新密码不能为空");
+                return "site/setting";
+            }
+            if (!newPassword.equals(confirmPwd)) {
+                model.addAttribute("confirmPasswordMsg", "两次密码输入不一致");
+                return "site/setting";
+            }
+            userService.updatePassword(user.getId(), CommunityUtil.md5(newPassword) + user.getSalt());
+
+        }
+        userService.logout(ticket);
+        return "redirect:/login";
     }
 
 }

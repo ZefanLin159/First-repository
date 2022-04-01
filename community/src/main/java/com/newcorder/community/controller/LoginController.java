@@ -106,7 +106,7 @@ public class LoginController implements CommunityConstant {
             model.addAttribute("target", "/index"); //在前端输入RequestMapping的路径
 
         } else {
-            model.addAttribute("msg", "激活失败，您提供的激活码不争取");
+            model.addAttribute("msg", "激活失败，您提供的激活码不正确");
             model.addAttribute("target", "/index");
 
         }
