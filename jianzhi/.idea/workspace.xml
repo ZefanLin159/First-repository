@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/SensitiveFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/sensitive-words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Tree/jianZhi27.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Tree/jianZhi28.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Tree/jianZhi55_1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Tree/jianZhi55_2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi54.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi55_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/TreeNode.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +58,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Application.jianZhi58_2">
+  <component name="RunManager" selected="Application.jianZhi55_2">
     <configuration name="jianZhi50" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzf.easy.myString.jianZhi50" />
       <module name="jianzhi" />
@@ -67,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi53_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Array.jianZhi53_1" />
+    <configuration name="jianZhi54" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Tree.jianZhi54" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.Array.*" />
+          <option name="PATTERN" value="com.lzf.easy.Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi53_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Array.jianZhi53_2" />
+    <configuration name="jianZhi55_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Tree.jianZhi55_2" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.Array.*" />
+          <option name="PATTERN" value="com.lzf.easy.Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jianZhi55_2" />
+        <item itemvalue="Application.jianZhi54" />
         <item itemvalue="Application.jianZhi58_2" />
         <item itemvalue="Application.jianZhi58_1" />
         <item itemvalue="Application.jianZhi50" />
-        <item itemvalue="Application.jianZhi53_1" />
-        <item itemvalue="Application.jianZhi53_2" />
       </list>
     </recent_temporary>
   </component>
@@ -233,6 +238,31 @@
           <url>file://$PROJECT_DIR$/src/com/lzf/easy/myString/jianZhi58_2.java</url>
           <line>16</line>
           <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi54.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi54.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi55_2.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi55_2.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi55_2.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
