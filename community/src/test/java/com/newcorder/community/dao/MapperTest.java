@@ -91,4 +91,29 @@ public class MapperTest {
         loginTicket = loginTicketDao.selectByTicket("abc");
         System.out.println(loginTicket);
     }
+
+    @Test
+    public void insertDiscussPostTest() {
+        DiscussPost discussPost = new DiscussPost();
+        discussPost.setUserId(188);
+        discussPost.setContent("我是小冰的小跟班");
+        discussPost.setCreateTime(new Date());
+        discussPost.setTitle("菜狗发言");
+        discussPost.setStatus(0);
+        discussPost.setScore(1700.213);
+        discussPost.setType(0);
+        discussPost.setCommentCount(0);
+        discussPostMapper.insertDiscussPost(discussPost);
+    }
+
+//    @Test
+//    public void deleteUserTest() {
+//        userMapper.deleteUser(151);
+//        userMapper.deleteUser(155);
+//        userMapper.deleteUser(156);
+//        userMapper.deleteUser(157);
+//        userMapper.deleteUser(158);
+//        userMapper.deleteUser(159);
+//        userMapper.deleteUser(160);
+//    }
 }

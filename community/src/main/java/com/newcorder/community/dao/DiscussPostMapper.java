@@ -14,5 +14,12 @@ public interface DiscussPostMapper {
     List<DiscussPost> selectDiscussPosts(int userId, int offset, int limitPage);
 
     //    需要动态拼接时，如果该方法只有一个参数时，我们必须加别名，否则报错
+    // @Param用于给参数取别名
+    // 如果只有一个参数，并且在<if>里使用，则必须加别名
     int selectDiscussPostRows(@Param("userId") int userId);
+
+
+    int insertDiscussPost(DiscussPost discussPost);
+
+
 }
