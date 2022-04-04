@@ -50,4 +50,10 @@
         values (#{userId},#{title},#{content},#{type},#{status},#{createTime},#{commentCount},#{score})
     </insert>
 
+    <select id="selectDiscussPostById" resultType="DiscussPost">
+        -- select结果集是不能包住的 select （xxx,xxx) from xxx 是错的
+        select
+        <include refid="selectField"/>
+        from discuss_post where id = #{id};
+    </select>
 </mapper>

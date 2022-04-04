@@ -1,7 +1,10 @@
-package com.newcorder.community.dao;
+package com.newcorder.community;
 
 
 import com.newcorder.community.CommunityApplication;
+import com.newcorder.community.dao.DiscussPostMapper;
+import com.newcorder.community.dao.LoginTicketMapper;
+import com.newcorder.community.dao.UserMapper;
 import com.newcorder.community.entity.DiscussPost;
 import com.newcorder.community.entity.LoginTicket;
 import com.newcorder.community.entity.User;
@@ -106,7 +109,7 @@ public class MapperTest {
         discussPostMapper.insertDiscussPost(discussPost);
     }
 
-//    @Test
+    //    @Test
 //    public void deleteUserTest() {
 //        userMapper.deleteUser(151);
 //        userMapper.deleteUser(155);
@@ -116,4 +119,10 @@ public class MapperTest {
 //        userMapper.deleteUser(159);
 //        userMapper.deleteUser(160);
 //    }
+    @Test
+    public void selectDiscussPostTest() {
+        DiscussPost post = discussPostMapper.selectDiscussPostById(149);
+        System.out.println(post);
+
+    }
 }
