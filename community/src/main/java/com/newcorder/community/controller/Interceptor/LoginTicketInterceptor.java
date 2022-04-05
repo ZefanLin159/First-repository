@@ -37,7 +37,7 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
 //            检查凭证是否有效(搜索到对应的登录凭证，以及是否激活，是否过期）
             if (loginTicket != null && loginTicket.getStatus() == 0 && loginTicket.getExpired().after(new Date())) {
 //                根据凭证查询用户
-                User user = userService.findById(loginTicket.getUserId());
+                User user = userService.findUserById(loginTicket.getUserId());
 //                在本次请求中持有用户（多线程的情况，很多个浏览器对应一个服务器），存用户
                 hostHolder.setUser(user); //线程启动的时候一直存在
 

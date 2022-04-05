@@ -63,7 +63,7 @@ public class DiscussPostController implements CommunityConstant {
         DiscussPost post = discussPostService.findDiscussPost(discussPostId);
         model.addAttribute("post", post);
 //        直接提取当前发帖子的用户
-        User user = userService.findById(post.getUserId());
+        User user = userService.findUserById(post.getUserId());
         model.addAttribute("user", user);
 
         // 评论分页信息
@@ -86,7 +86,7 @@ public class DiscussPostController implements CommunityConstant {
                 // 评论
                 commentVo.put("comment", comment);
                 // 作者
-                commentVo.put("user", userService.findById(comment.getUserId()));
+                commentVo.put("user", userService.findUserById(comment.getUserId()));
 
                 // 回复列表
                 int testId = comment.getId();
@@ -100,9 +100,9 @@ public class DiscussPostController implements CommunityConstant {
                         // 回复
                         replyVo.put("reply", reply);
                         // 作者
-                        replyVo.put("user", userService.findById(reply.getUserId()));
+                        replyVo.put("user", userService.findUserById(reply.getUserId()));
                         // 回复目标
-                        User target = reply.getTargetId() == 0 ? null : userService.findById(reply.getTargetId());
+                        User target = reply.getTargetId() == 0 ? null : userService.findUserById(reply.getTargetId());
                         replyVo.put("target", target);
 
                         replyVoList.add(replyVo);

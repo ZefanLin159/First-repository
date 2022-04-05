@@ -4,9 +4,11 @@ package com.newcorder.community;
 import com.newcorder.community.CommunityApplication;
 import com.newcorder.community.dao.DiscussPostMapper;
 import com.newcorder.community.dao.LoginTicketMapper;
+import com.newcorder.community.dao.MessageMapper;
 import com.newcorder.community.dao.UserMapper;
 import com.newcorder.community.entity.DiscussPost;
 import com.newcorder.community.entity.LoginTicket;
+import com.newcorder.community.entity.Message;
 import com.newcorder.community.entity.User;
 import com.newcorder.community.util.CommunityConstant;
 import com.newcorder.community.util.CommunityUtil;
@@ -29,6 +31,9 @@ public class MapperTest {
 
     @Autowired
     private LoginTicketMapper loginTicketDao;
+
+    @Autowired
+    private MessageMapper messageMapper;
 
     @Test
     public void testSelectUser() {
@@ -123,6 +128,29 @@ public class MapperTest {
     public void selectDiscussPostTest() {
         DiscussPost post = discussPostMapper.selectDiscussPostById(149);
         System.out.println(post);
+
+    }
+
+    @Test
+    public void testSelectLetter() {
+        List<Message> messages = messageMapper.selectConversation(111, 0, 20);
+        for (Message message : messages) {
+            System.out.println(message);
+        }
+        int count = messageMapper.selectConversationCount(111);
+        System.out.println(count);
+
+        List<Message> list = messageMapper.selectLetter("111_112", 0, 10);
+        for (Message message : list) {
+            System.out.println(message);
+        }
+
+        int count1 = messageMapper.selectLetterCount("111_112");
+        System.out.println(count1);
+
+        int count2 = messageMapper.selectLetterUnreadCount(131, "111_131");
+        System.out.println(count2);
+
 
     }
 }

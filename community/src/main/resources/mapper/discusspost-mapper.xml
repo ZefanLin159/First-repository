@@ -56,4 +56,10 @@
         <include refid="selectField"/>
         from discuss_post where id = #{id};
     </select>
+
+    <insert id="updateCommentCount">
+        update discuss_post
+        set comment_count = #{commentCount}
+        where id = #{id}
+    </insert>
 </mapper>

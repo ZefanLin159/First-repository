@@ -75,7 +75,8 @@ public class UserService implements CommunityConstant {
                 map.put("usernameMsg", "该账号未激活");
             }
             String userPassword = user.getPassword();
-            if (userPassword.equals(CommunityUtil.md5(password) + user.getSalt())) {
+            String checkoutPwd = CommunityUtil.md5(password + user.getSalt());
+            if (userPassword.equals(CommunityUtil.md5(password+ user.getSalt()))) {
 //                生成登录凭证
                 LoginTicket loginTicket = new LoginTicket();
                 loginTicket.setUserId(user.getId());
@@ -168,7 +169,7 @@ public class UserService implements CommunityConstant {
     }
 
 
-    public User findById(int id) {
+    public User findUserById(int id) {
         return userMapper.selectById(id);
     }
 
@@ -176,7 +177,7 @@ public class UserService implements CommunityConstant {
         return userMapper.updateHeader(userId, headerUrl);
     }
 
-//    public User findByName(String username) {
+    //    public User findByName(String username) {
 //        return userMapper.selectByName(username);
 //    }
 //

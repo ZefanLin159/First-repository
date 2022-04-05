@@ -22,24 +22,32 @@ public class jianZhi68_1 {
         TreeNode node5 = new TreeNode(9);
         head.right.right = node5;
         jianZhi68_1 jz68_1 = new jianZhi68_1();
-        System.out.println(jz68_1.lowestCommonAncestor(head, node3,node2).val);
+        System.out.println(jz68_1.lowestCommonAncestor(head, node3, node2).val);
     }
 
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if(p.val > q.val) { // 保证 p.val < q.val
+    public TreeNode lowestCommonAncestor1(TreeNode root, TreeNode p, TreeNode q) {
+//        交换传进来的节点
+        if (p.val > q.val) { // 保证 p.val < q.val
             TreeNode tmp = p;
             p = q;
             q = tmp;
         }
-        while(root != null) {
-            if(root.val < p.val) // p,q 都在 root 的右子树中
+        while (root != null) {
+            if (root.val < p.val) // p,q 都在 root 的右子树中
                 root = root.right; // 遍历至右子节点
-            else if(root.val > q.val) // p,q 都在 root 的左子树中
+            else if (root.val > q.val) // p,q 都在 root 的左子树中
                 root = root.left; // 遍历至左子节点
             else break;
         }
         return root;
         //
+    }
+
+    //    递归
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (p.val < root.val && q.val < root.val) return lowestCommonAncestor(root.left, p, q);
+        if (p.val > root.val && q.val > root.val) return lowestCommonAncestor(root.right, p, q);
+        return root;
     }
 
 
