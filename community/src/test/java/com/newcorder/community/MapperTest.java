@@ -153,4 +153,12 @@ public class MapperTest {
 
 
     }
+
+    @Test
+    public void changePwd() {
+        User user = userMapper.selectById(165);
+        userMapper.updatePassword(165, CommunityUtil.md5("123" + user.getSalt()));
+        System.out.println(user);
+
+    }
 }

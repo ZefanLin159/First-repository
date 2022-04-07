@@ -177,10 +177,10 @@ public class UserService implements CommunityConstant {
         return userMapper.updateHeader(userId, headerUrl);
     }
 
-    //    public User findByName(String username) {
-//        return userMapper.selectByName(username);
-//    }
-//
+        public User findByName(String username) {
+        return userMapper.selectByName(username);
+    }
+
 //    public User selectByEmail(String email) {
 //        return userMapper.selectByEmail(email);
 //    }

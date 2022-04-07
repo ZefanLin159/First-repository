@@ -7,6 +7,10 @@
         id
         ,from_id,to_id,conversation_id,content,status,create_time
     </sql>
+    <sql id="insertField">
+        from_id
+        ,to_id,conversation_id,content,status,create_time
+    </sql>
 
     <select id="selectConversation" resultType="Message">
         -- 查询列表中那个未读的消息
@@ -70,4 +74,20 @@
             and conversation_id = #{conversationId}
         </if>
     </select>
+
+    <insert id="insertMessage" parameterType="Message" keyProperty="id">
+        insert into message
+        (<include refid="insertField"></include>)
+        values (#{fromId},#{toId},#{conversationId},#{content},#{status},#{createTime})
+    </insert>
+    <update id="updateStatus">
+        -- 拼接所有的id,切记不能加
+        update message
+        set status = #{status}
+        where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </update>
+
 </mapper>
