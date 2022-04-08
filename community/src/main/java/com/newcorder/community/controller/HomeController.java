@@ -5,7 +5,10 @@ import com.newcorder.community.entity.DiscussPost;
 import com.newcorder.community.entity.Page;
 import com.newcorder.community.entity.User;
 import com.newcorder.community.service.DiscussPostService;
+import com.newcorder.community.service.LikeService;
 import com.newcorder.community.service.UserService;
+import com.newcorder.community.util.CommunityConstant;
+import com.newcorder.community.util.CommunityUtil;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,12 +22,15 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class HomeController {
+public class HomeController implements CommunityConstant {
     @Autowired
     private DiscussPostService discussPostService;
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private LikeService likeService;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
     public String getIndexPage(Model model, Page page) {
@@ -32,16 +38,20 @@ public class HomeController {
 //        所以，在thymeleaf中可以直接访问Page对象中的数据 Model model, Page page
         page.setRows(discussPostService.findDiscussPostRows(0));
         page.setPath("index");
-
+//        首页所有页的帖子列表集合
+        List<Map<String, Object>> discussPosts = new ArrayList<>();
+//        首页当前页的帖子列表
         List<DiscussPost> list = discussPostService.findDiscussPosts(0, page.getOffset(), page.getLimit());
 
-        List<Map<String, Object>> discussPosts = new ArrayList<>();
         if (list != null) {
             for (DiscussPost post : list) {
                 HashMap<String, Object> map = new HashMap<>();
                 map.put("post", post);
                 User user = userService.findUserById(post.getUserId());
                 map.put("user", user);
+                long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, post.getId());
+                map.put("likeCount", likeCount);
+
                 discussPosts.add(map);
             }
         }
@@ -49,9 +59,9 @@ public class HomeController {
         return "index";
     }
 
-//    @RequestMapping(path = "/test")
-//    public String testTest(Model model) {
-//        model.addAttribute("testST", 123);
-//        return "test";
-//    }
+    //    增加一个处理
+    @RequestMapping(path = "error", method = RequestMethod.GET)
+    public String getErrorPage() {
+        return "error/500";
+    }
 }

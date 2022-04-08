@@ -122,10 +122,12 @@ public class MessageController {
     }
 
     /*toName：接收者的用户名
-     * content：内容*/
+     * content：内容
+     * 异步请求*/
     @RequestMapping(path = "/letter/send", method = RequestMethod.POST)
     @ResponseBody //异步
     public String sendLetter(String toName, String content) {
+        Integer.valueOf("abc");
         User targetUser = userService.findByName(toName);
         if (targetUser == null) {
             return CommunityUtil.getJSONString(1, "目标用户不存在!");

@@ -42,6 +42,11 @@ spring:
         smtp:
           ssl:
             enable: true
+  # redis配置
+  redis:
+    database: 11
+    host: localhost
+    port: 6379
 # mybatis 配置
 mybatis:
   mapper-locations: classpath:mapper/*.xml
@@ -56,7 +61,7 @@ logging:
   level:
     com:
       newcorder:
-        community:  debug # 这个包级别是debug
+        community: debug # 这个包级别是debug
   file:
     path: d:/work/data/newcoder/community.log
 
