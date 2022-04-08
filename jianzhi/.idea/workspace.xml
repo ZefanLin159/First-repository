@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi56_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/Array/jianZhi56_2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi56_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Tree/jianZhi68_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Tree/jianZhi68_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/Array/jianZhi56_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/Array/jianZhi56_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi56_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi56_1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
-  <component name="RunManager" selected="Application.jianZhi56_1">
+  <component name="RunManager" selected="Application.jianZhi56_2">
     <configuration name="jianZhi54" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzf.easy.Tree.jianZhi54" />
       <module name="jianzhi" />
@@ -95,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi58_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.myString.jianZhi58_2" />
+    <configuration name="jianZhi56_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi56_2" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.easy.myString.*" />
+          <option name="PATTERN" value="com.lzf.medium.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jianZhi56_2" />
         <item itemvalue="Application.jianZhi56_1" />
         <item itemvalue="Application.jianZhi68_1" />
         <item itemvalue="Application.jianZhi55_2" />
         <item itemvalue="Application.jianZhi54" />
-        <item itemvalue="Application.jianZhi58_2" />
       </list>
     </recent_temporary>
   </component>
@@ -268,13 +269,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi56_1.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi56_1.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="73" />
+          <line>17</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
