@@ -22,7 +22,9 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <!-- logo -->
                 <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- 功能 -->
@@ -32,7 +34,8 @@
                             <a class="nav-link" th:href="@{/index}">首页</a>
                         </li>
                         <li class="nav-item ml-3 btn-group-vertical" th:if="${loginUser!=null}">
-                            <a class="nav-link position-relative" th:href="@{/letter/list}">消息<span class="badge badge-danger">12</span></a>
+                            <a class="nav-link position-relative" th:href="@{/letter/list}">消息<span
+                                    class="badge badge-danger">12</span></a>
                         </li>
                         <li class="nav-item ml-3 btn-group-vertical" th:if="${loginUser==null}">
                             <a class="nav-link" th:href="@{/register}">注册</a>
@@ -41,11 +44,12 @@
                             <a class="nav-link" th:href="@{/login}">登录</a>
                         </li>
                         <li class="nav-item ml-3 btn-group-vertical dropdown" th:if="${loginUser!=null}">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img th:src="${loginUser.headerUrl}" class="rounded-circle" style="width:30px;"/>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-center" href="site/profile.html">个人主页</a>
+                                <a class="dropdown-item text-center" th:href="@{|/user/profile/${loginUser.id}|}">个人主页</a>
                                 <a class="dropdown-item text-center" th:href="@{/user/setting}">账号设置</a>
                                 <a class="dropdown-item text-center" th:href="@{/logout}">退出登录</a>
                                 <div class="dropdown-divider"></div>
@@ -55,7 +59,7 @@
                     </ul>
                     <!-- 搜索 -->
                     <form class="form-inline my-2 my-lg-0" action="site/search.html">
-                        <input class="form-control mr-sm-2" type="search" aria-label="Search" />
+                        <input class="form-control mr-sm-2" type="search" aria-label="Search"/>
                         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>
                     </form>
                 </div>
@@ -129,7 +133,7 @@
             <ul class="list-unstyled">
                 <!--					th:each="map:${discussPosts} th 语法，返回一个map-->
                 <li class="media pb-3 pt-3 mb-3 border-bottom" th:each="map:${discussPosts}">
-                    <a href="site/profile.html">
+                    <a th:href="@{|/user/profile/${map.user.id}|}">
                         <!--/*@thymesVar id="user" type=""*/-->
                         <img th:src="${map.user.headerUrl}" class="mr-4 rounded-circle" alt="用户头像"
                              style="width:50px;height:50px;">
@@ -147,7 +151,7 @@
                                 th:text="${#dates.format(map.post.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15
                             15:32:18</b>
                             <ul class="d-inline float-right">
-                                <li class="d-inline ml-2">赞<span th:text="${map.likeCount}">11</span> </li>
+                                <li class="d-inline ml-2">赞<span th:text="${map.likeCount}">11</span></li>
                                 <li class="d-inline ml-2">|</li>
                                 <li class="d-inline ml-2">回帖 <span th:text="${map.post.commentCount}">7</span></li>
                             </ul>

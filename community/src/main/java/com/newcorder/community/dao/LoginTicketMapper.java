@@ -4,6 +4,7 @@ import com.newcorder.community.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
 
 @Mapper
+@Deprecated
 public interface LoginTicketMapper {
     //    注解里也支持动态sql
     @Insert("insert into login_ticket (user_id, ticket, status, expired) values(#{userId},#{ticket},#{status},#{expired})")

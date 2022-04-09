@@ -5,17 +5,21 @@ import com.newcorder.community.entity.LoginTicket;
 import com.newcorder.community.entity.User;
 import com.newcorder.community.service.UserService;
 import com.newcorder.community.util.CommunityConstant;
+import com.newcorder.community.util.CommunityUtil;
+import com.newcorder.community.util.RedisKeyUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.thymeleaf.TemplateEngine;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
@@ -26,6 +30,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @Controller
 public class LoginController implements CommunityConstant {
@@ -38,14 +43,20 @@ public class LoginController implements CommunityConstant {
     private UserService userService;
     @Autowired
     private Producer kaptchaProducer;
-
+    @Autowired
+    private RedisTemplate redisTemplate;
 
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)//有传数据ticket，用 post请求
 //    传入的值一般都是前端的值,session是验证码,获得登录凭证
     public String getTicket(Model model, String username, String password, String code,
-                            boolean rememberMe, HttpSession session, HttpServletResponse response) {
+                            boolean rememberMe, HttpSession session, HttpServletResponse response,
+                            @CookieValue("kaptchaOwner") String kaptchaOwner) {
         String kaptcha = (String) session.getAttribute("kaptcha");
+        if (StringUtils.isNoneBlank(kaptchaOwner)) {
+            String redisKey = RedisKeyUtil.getKaptchaKey(kaptchaOwner);
+            kaptcha = (String) redisTemplate.opsForValue().get(redisKey);
+        }
 //        验证码忽略大小写kaptcha.equalsIgnoreCase(code))
         boolean flag1 = StringUtils.isBlank(kaptcha);
         boolean flag2 = StringUtils.isBlank(code);
@@ -74,14 +85,27 @@ public class LoginController implements CommunityConstant {
     }
 
 
+    //    对这里做优化
     @RequestMapping(path = "/kaptcha", method = RequestMethod.GET)
-    public void getKaptcha(HttpServletResponse response, HttpSession session) {
+    public void getKaptcha(HttpServletResponse response/*, HttpSession session*/) {
 //        验证码应该放在服务端，否则容易被盗用
 //        生成验证码
         String text = kaptchaProducer.createText();
         BufferedImage image = kaptchaProducer.createImage(text);
 //        将验证码传入session
-        session.setAttribute("kaptcha", text);
+//        session.setAttribute("kaptcha", text);
+
+//        验证码的归属
+        String kaptchaOwner = CommunityUtil.generateUUID();
+        Cookie cookie = new Cookie("kaptchaOwner", kaptchaOwner);
+//        设置cookie有效时间 s
+        cookie.setMaxAge(120);
+        cookie.setPath(contextPath);
+        response.addCookie(cookie);
+//        将验证码存入redis
+        String redisKey = RedisKeyUtil.getKaptchaKey(kaptchaOwner);
+        redisTemplate.opsForValue().set(redisKey, text, 120, TimeUnit.SECONDS);
+
 //        将图片输出给浏览器
         response.setContentType("image/png");
         try {
@@ -92,6 +116,26 @@ public class LoginController implements CommunityConstant {
 
         }
     }
+
+////    对这里做优化
+//    @RequestMapping(path = "/kaptcha", method = RequestMethod.GET)
+//    public void getKaptcha(HttpServletResponse response, HttpSession session) {
+////        验证码应该放在服务端，否则容易被盗用
+////        生成验证码
+//        String text = kaptchaProducer.createText();
+//        BufferedImage image = kaptchaProducer.createImage(text);
+////        将验证码传入session
+//        session.setAttribute("kaptcha", text);
+////        将图片输出给浏览器
+//        response.setContentType("image/png");
+//        try {
+//            OutputStream os = response.getOutputStream();//这个流不用关闭
+//            ImageIO.write(image, "png", os);
+//        } catch (IOException e) {
+//            logger.error("响应验证码失败" + e.getMessage());
+//
+//        }
+//    }
 
     // url :http://localhost:8080/community/activation/(用户id)/(激活码）实际上是一个查询的行为
     @RequestMapping(path = "/activation/{userId}/{code}", method = RequestMethod.GET)
