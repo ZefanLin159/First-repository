@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi31.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi47.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianzhi64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/BlockingQueueTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/KafkaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi66.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi35.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi36.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/Array/jianZhi56_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/Array/jianZhi56_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/myString/jianZhi58_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/myString/jianZhi58_2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +41,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://C:/Program Files (x86)/Java/jdk1.8.0_271/src.zip!/java/io/PrintStream.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://C:/Program Files (x86)/Java/jdk1.8.0_271/src.zip!/java/util/Arrays.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectId" id="2662jriTre64smeRK5BUXpdGbDc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,9 +56,12 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.43563217" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.jianzhi64">
+  <component name="RunManager" selected="Application.jianZhi66">
     <configuration name="jianZhi31" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi31" />
       <module name="jianzhi" />
@@ -83,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi56_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi56_1" />
+    <configuration name="jianZhi56_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi56_2" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi56_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi56_2" />
+    <configuration name="jianZhi66" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi66" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jianZhi66" />
         <item itemvalue="Application.jianzhi64" />
         <item itemvalue="Application.jianZhi47" />
         <item itemvalue="Application.jianZhi31" />
         <item itemvalue="Application.jianZhi56_2" />
-        <item itemvalue="Application.jianZhi56_1" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +156,11 @@
       <workItem from="1648390738536" duration="1454000" />
       <workItem from="1648433968846" duration="631000" />
       <workItem from="1648475371069" duration="27988000" />
-      <workItem from="1649510988370" duration="6709000" />
+      <workItem from="1649510988370" duration="7435000" />
+      <workItem from="1649560091205" duration="338000" />
+      <workItem from="1649563150608" duration="62000" />
+      <workItem from="1649563228269" duration="263000" />
+      <workItem from="1649563510558" duration="5173000" />
     </task>
     <servers />
   </component>
@@ -287,6 +296,16 @@
           <url>file://$PROJECT_DIR$/src/com/lzf/medium/Array/jianzhi64.java</url>
           <line>11</line>
           <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi66.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi66.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
