@@ -1,5 +1,7 @@
 package com.newcorder.community.controller;
 
+import com.newcorder.community.enent.EventProducer;
+import com.newcorder.community.entity.Event;
 import com.newcorder.community.entity.Page;
 import com.newcorder.community.entity.User;
 import com.newcorder.community.service.FollowService;
@@ -22,6 +24,8 @@ import java.util.Map;
 public class FollowController implements CommunityConstant {
 
     @Autowired
+    private EventProducer eventProducer;
+    @Autowired
     private FollowService followService;
 
     @Autowired
@@ -36,6 +40,16 @@ public class FollowController implements CommunityConstant {
     public String follow(int entityType, int entityId) {
         User user = hostHolder.getUser();
         followService.follow(user.getId(), entityType, entityId);
+
+//        触发关注事件
+        Event event = new Event()
+                .setTopic(TOPIC_FOLLOW)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(ENTITY_TYPE_USER)
+                .setEntityId(entityId)
+                .setEntityUserid(entityId);
+        eventProducer.fileEvent(event);
+
         return CommunityUtil.getJSONString(0, "已关注");
     }
 

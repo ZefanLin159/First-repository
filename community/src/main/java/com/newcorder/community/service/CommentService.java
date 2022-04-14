@@ -5,6 +5,7 @@ import com.newcorder.community.entity.Comment;
 import com.newcorder.community.util.CommunityConstant;
 import com.newcorder.community.util.SensitiveFilter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -18,11 +19,17 @@ public class CommentService implements CommunityConstant {
     @Autowired
     private CommentMapper commentMapper;
 
+    @Lazy
     @Autowired
     private DiscussPostService discussPostService;
 
+    @Lazy
     @Autowired
     private SensitiveFilter sensitiveFilter;
+
+    public Comment findCommentById(int id){
+        return commentMapper.selectCommentById(id);
+    }
 
     public List<Comment> findCommentByEntity(int entityType, int entityId, int offset, int limit) {
         return commentMapper.selectCommentByEntity(entityType, entityId, offset, limit);

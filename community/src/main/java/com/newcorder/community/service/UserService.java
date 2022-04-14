@@ -178,7 +178,7 @@ public class UserService implements CommunityConstant {
         System.out.println(url);
         context.setVariable("url", url);
         String content = templateEngine.process("/mail/activation", context);
-        mailClient.sendMail(user.getEmail(), "激活账号", content);
+//        mailClient.sendMail(user.getEmail(), "激活账号", content);
 
 
         return map;

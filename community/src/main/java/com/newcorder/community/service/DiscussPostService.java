@@ -4,6 +4,7 @@ import com.newcorder.community.dao.DiscussPostMapper;
 import com.newcorder.community.entity.DiscussPost;
 import com.newcorder.community.util.SensitiveFilter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.web.util.HtmlUtils;
 
@@ -14,6 +15,7 @@ public class DiscussPostService {
     @Autowired
     private DiscussPostMapper discussPostMapper;
 
+    @Lazy
     @Autowired
     private SensitiveFilter sensitiveFilter;
 

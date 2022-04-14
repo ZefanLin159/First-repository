@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "spring.datasource.hikari.connection-timeJavaMailSender' that could not be found.out",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.hikari.connection-timeJavaMailSender' that could not be found.out."
+  }
+] }

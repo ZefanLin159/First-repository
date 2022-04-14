@@ -5,17 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/BlockingQueueTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/KafkaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi66.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi35.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi36.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/enent/EventConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/enent/EventProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../community/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/aspect/ServiceLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/aspect/ServiceLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/FollowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LikeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/CommentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/MessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/DiscussPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/DiscussPostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CommunityConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CommunityConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/MailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/MailClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/mapper/comment-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/mapper/comment-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/mapper/message-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/mapper/message-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/static/js/discuss.js" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/static/js/discuss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/discuss-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/discuss-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/letter.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/letter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/MailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/MailTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/myString/jianZhi58_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/myString/jianZhi58_2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +179,7 @@
       <workItem from="1649563150608" duration="62000" />
       <workItem from="1649563228269" duration="263000" />
       <workItem from="1649563510558" duration="5173000" />
+      <workItem from="1649754288948" duration="1194000" />
     </task>
     <servers />
   </component>
