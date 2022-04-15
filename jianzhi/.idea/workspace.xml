@@ -5,35 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/enent/EventConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/enent/EventProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../community/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/aspect/ServiceLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/aspect/ServiceLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/FollowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/LikeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/MessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/DiscussPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/DiscussPostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CommunityConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CommunityConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/MailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/MailClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/mapper/comment-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/mapper/comment-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/mapper/message-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/mapper/message-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/static/js/discuss.js" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/static/js/discuss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/discuss-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/discuss-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/letter.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/letter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/notice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/MailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/MailTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi32_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi32_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi33.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/easy/Tree/jianZhi32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/easy/Tree/jianZhi32_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi35.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi35.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi36.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/medium/myLinkList/jianZhi36.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +49,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../community" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -79,13 +61,26 @@
     <property name="project.structure.side.proportion" value="0.43563217" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.jianZhi66">
-    <configuration name="jianZhi31" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi31" />
+  <component name="RunManager" selected="Application.jianZhi32_3">
+    <configuration name="jianZhi32_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Tree.jianZhi32_1" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzf.medium.Array.*" />
+          <option name="PATTERN" value="com.lzf.medium.Tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jianZhi32_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Tree.jianZhi32_3" />
+      <module name="jianzhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzf.medium.Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,19 +90,6 @@
     </configuration>
     <configuration name="jianZhi47" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi47" />
-      <module name="jianzhi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzf.medium.Array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="jianZhi56_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi56_2" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
@@ -147,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jianZhi32_3" />
+        <item itemvalue="Application.jianZhi32_1" />
         <item itemvalue="Application.jianZhi66" />
         <item itemvalue="Application.jianzhi64" />
         <item itemvalue="Application.jianZhi47" />
-        <item itemvalue="Application.jianZhi31" />
-        <item itemvalue="Application.jianZhi56_2" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +162,8 @@
       <workItem from="1649563228269" duration="263000" />
       <workItem from="1649563510558" duration="5173000" />
       <workItem from="1649754288948" duration="1194000" />
+      <workItem from="1649938616705" duration="6090000" />
+      <workItem from="1649988277150" duration="595000" />
     </task>
     <servers />
   </component>
@@ -317,14 +301,14 @@
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi66.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="96" />
+          <url>file://$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi32_1.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/lzf/medium/Array/jianZhi66.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="98" />
+          <url>file://$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi32_3.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,5 @@
 package com.lzf.medium.myLinkList;
 
-import com.lzf.Node;
 
 public class jianZhi36 {
     Node pre, head;
@@ -24,6 +23,22 @@ public class jianZhi36 {
 
 
     }
+    class Node {
+        public int val;
+        public Node left;
+        public Node right;
 
+        public Node() {}
+
+        public Node(int _val) {
+            val = _val;
+        }
+
+        public Node(int _val,Node _left,Node _right) {
+            val = _val;
+            left = _left;
+            right = _right;
+        }
+    }
 
 }

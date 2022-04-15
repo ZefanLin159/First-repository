@@ -4,7 +4,7 @@ import com.lzf.TreeNode;
 
 import java.util.*;
 
-public class jianZhi32 {
+public class jianZhi32_2 {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> list = new ArrayList<>();
