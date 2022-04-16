@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi34.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/dp/jianZhi13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/dp/jianZhi14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/CQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianZhi15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/DiscussPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/DiscussPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzf/medium/dp/jianZhi13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/medium/dp/jianZhi13.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../community" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -157,7 +160,7 @@
       <workItem from="1649563510558" duration="5173000" />
       <workItem from="1649754288948" duration="1194000" />
       <workItem from="1649938616705" duration="6090000" />
-      <workItem from="1649988277150" duration="7267000" />
+      <workItem from="1649988277150" duration="13522000" />
     </task>
     <servers />
   </component>
