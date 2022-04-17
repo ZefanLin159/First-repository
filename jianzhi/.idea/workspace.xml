@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/CQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/jianZhi15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/CommunityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/DiscussPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/DiscussPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myStack/MinStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myMath/jianZhi16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myMath/jianZhi20.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lzf/medium/dp/jianZhi13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzf/medium/dp/jianZhi13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/dp/jianZhi14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/dp/jianZhi14.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +56,39 @@
     <property name="project.structure.side.proportion" value="0.43563217" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.jianZhi14">
+  <component name="RunManager" selected="Application.MinStack">
+    <configuration name="MinStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.easy.myStack.MinStack" />
+      <module name="jianzhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzf.easy.myStack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="jianZhi14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzf.medium.dp.jianZhi14" />
       <module name="jianzhi" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lzf.medium.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jianZhi16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.myMath.jianZhi16" />
+      <module name="jianzhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzf.medium.myMath.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,39 +122,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jianZhi66" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianZhi66" />
-      <module name="jianzhi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzf.medium.Array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="jianzhi64" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lzf.medium.Array.jianzhi64" />
-      <module name="jianzhi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzf.medium.Array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinStack" />
+        <item itemvalue="Application.jianZhi16" />
         <item itemvalue="Application.jianZhi14" />
         <item itemvalue="Application.jianZhi32_3" />
         <item itemvalue="Application.jianZhi32_1" />
-        <item itemvalue="Application.jianZhi66" />
-        <item itemvalue="Application.jianzhi64" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +158,7 @@
       <workItem from="1649563510558" duration="5173000" />
       <workItem from="1649754288948" duration="1194000" />
       <workItem from="1649938616705" duration="6090000" />
-      <workItem from="1649988277150" duration="13522000" />
+      <workItem from="1649988277150" duration="22131000" />
     </task>
     <servers />
   </component>
@@ -306,6 +304,21 @@
           <url>file://$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi32_3.java</url>
           <line>39</line>
           <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/medium/myMath/jianZhi16.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/myStack/MinStack.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lzf/easy/myStack/MinStack.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="116" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
