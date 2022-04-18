@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/easy/myStack/MinStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myMath/jianZhi16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myMath/jianZhi20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/Tree/jianZhi26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myString/jianZhi36.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/dp/jianZhi14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jianzhi/com/lzf/medium/dp/jianZhi14.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +156,7 @@
       <workItem from="1649563510558" duration="5173000" />
       <workItem from="1649754288948" duration="1194000" />
       <workItem from="1649938616705" duration="6090000" />
-      <workItem from="1649988277150" duration="22131000" />
+      <workItem from="1649988277150" duration="28238000" />
     </task>
     <servers />
   </component>
