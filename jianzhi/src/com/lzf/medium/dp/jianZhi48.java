@@ -11,6 +11,7 @@ public class jianZhi48 {
 
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> map = new HashMap<>();
+        int test = 0;
         map.put(s.charAt(0), 0);
         int len = s.length();
         int[] dp = new int[len];
@@ -18,6 +19,7 @@ public class jianZhi48 {
         int i = -1;
         for (int j = 1; j < dp.length; j++) {
             if (map.containsKey(s.charAt(j))) {
+                test = map.get(s.charAt(j));
                 i = Math.max(i, map.get(s.charAt(j)));
             }
             map.put(s.charAt(j), j);
