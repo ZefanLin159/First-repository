@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/hard/jianZhi51.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzf/medium/myString/jianZhi67.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/LeetCode03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +158,8 @@
       <workItem from="1649563510558" duration="5173000" />
       <workItem from="1649754288948" duration="1194000" />
       <workItem from="1649938616705" duration="6090000" />
-      <workItem from="1649988277150" duration="62401000" />
+      <workItem from="1649988277150" duration="62838000" />
+      <workItem from="1650803787247" duration="1245000" />
     </task>
     <servers />
   </component>
@@ -336,8 +338,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/lzf/hard/jianZhi51.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="190" />
+          <line>24</line>
+          <option name="timeStamp" value="193" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
