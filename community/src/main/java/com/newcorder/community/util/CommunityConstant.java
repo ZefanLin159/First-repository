@@ -25,7 +25,7 @@ public interface CommunityConstant {
 
     /*主题：评论*/
     String TOPIC_COMMENT = "comment";
-
+    String TOPIC_PUBLISH = "publish";
     /*主题：点赞*/
     String TOPIC_LIKE = "like";
     /*主题：关注*/

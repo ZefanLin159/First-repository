@@ -1,4 +1,4 @@
-package myString;
+package myString待整理;
 
 import java.util.HashMap;
 import java.util.Scanner;

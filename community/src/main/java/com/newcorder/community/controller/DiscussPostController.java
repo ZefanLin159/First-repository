@@ -1,10 +1,8 @@
 package com.newcorder.community.controller;
 
 import com.newcorder.community.dao.CommentMapper;
-import com.newcorder.community.entity.Comment;
-import com.newcorder.community.entity.DiscussPost;
-import com.newcorder.community.entity.Page;
-import com.newcorder.community.entity.User;
+import com.newcorder.community.enent.EventProducer;
+import com.newcorder.community.entity.*;
 import com.newcorder.community.service.CommentService;
 import com.newcorder.community.service.DiscussPostService;
 import com.newcorder.community.service.LikeService;
@@ -27,6 +25,8 @@ import java.util.*;
 @Controller
 @RequestMapping("/discuss")
 public class DiscussPostController implements CommunityConstant {
+    @Autowired
+    private EventProducer eventProducer;
     @Autowired
     private DiscussPostService discussPostService;
 
@@ -54,6 +54,12 @@ public class DiscussPostController implements CommunityConstant {
         post.setContent(content);
         post.setCreateTime(new Date());
         discussPostService.addDiscussPost(post);
+//        触发发帖事件
+        Event event = new Event().setTopic(TOPIC_PUBLISH)
+                .setUserId(user.getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(post.getId());
+        eventProducer.fileEvent(event);
 //        报错的情况将来统一处理
         return CommunityUtil.getJSONString(0, "发布成功");
 

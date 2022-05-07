@@ -1,4 +1,4 @@
-package myString;
+package myString待整理;
 
 public class leetCode11 {
     public static void main(String[] args) {

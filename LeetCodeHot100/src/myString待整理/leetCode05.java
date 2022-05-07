@@ -1,6 +1,4 @@
-package myString;
-
-import java.util.ArrayList;
+package myString待整理;
 
 public class leetCode05 {
     public static void main(String[] args) {

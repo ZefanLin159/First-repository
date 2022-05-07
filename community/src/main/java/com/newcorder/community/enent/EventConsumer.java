@@ -1,8 +1,11 @@
 package com.newcorder.community.enent;
 
 import com.alibaba.fastjson.JSONObject;
+import com.newcorder.community.entity.DiscussPost;
 import com.newcorder.community.entity.Event;
 import com.newcorder.community.entity.Message;
+import com.newcorder.community.service.DiscussPostService;
+import com.newcorder.community.service.ElasticSearchService;
 import com.newcorder.community.service.MessageService;
 import com.newcorder.community.util.CommunityConstant;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -24,7 +27,13 @@ public class EventConsumer implements CommunityConstant {
     @Autowired
     private MessageService messageService;
 
-//    被动触发的，加了这个注解就不需要调用了
+    @Autowired
+    private DiscussPostService discussPostService;
+
+    @Autowired
+    private ElasticSearchService elasticSearchService;
+
+    //    被动触发的，加了这个注解就不需要调用了
     @KafkaListener(topics = {TOPIC_COMMENT, TOPIC_LIKE, TOPIC_FOLLOW})
     public void handleCommentMessage(ConsumerRecord record) {
         if (record == null || record.value() == null) {
@@ -59,4 +68,23 @@ public class EventConsumer implements CommunityConstant {
         messageService.addMessage(message);
     }
 
+    //    消费发帖事件
+    @KafkaListener(topics = (TOPIC_PUBLISH))
+    public void handlerPublishMessage(ConsumerRecord record) {
+
+        if (record == null || record.value() == null) {
+            logger.error("消息内容为空");
+            return;
+        }
+
+        Event event = JSONObject.parseObject(record.value().toString(), Event.class);
+        if (event == null) {
+            logger.error("消息格式错误！");
+            return;
+        }
+
+        DiscussPost post = discussPostService.findDiscussPost(event.getEntityId());
+        elasticSearchService.saveDisscussPost(post);
+
+    }
 }

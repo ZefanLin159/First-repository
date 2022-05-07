@@ -5,10 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da89f91-0ba1-4f1d-b130-6f9cbe47a49f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/leetCode17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/leetCode31.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myTree/leetCode102.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myTree/leetCode105.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myarray/leetCode55.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/dao/elasticsearch/DiscussPostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/service/ElasticSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../community/src/test/java/com/newcorder/community/ElasticSearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/LeetCode03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode02$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/out/production/LeetCodeHot100/myString/leetCode15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/LeetCode03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/LeetCode03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/leetCode01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/leetCode02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode05.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/leetCode05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode11.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/leetCode11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCodeHot100/src/myString/leetCode15.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCodeHot100/src/myString待整理/leetCode15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/DiscussPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/controller/DiscussPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/enent/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/enent/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/DiscussPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/entity/DiscussPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CommunityConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/java/com/newcorder/community/util/CommunityConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/mapper/discusspost-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/mapper/discusspost-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../community/src/main/resources/templates/site/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../community/src/main/resources/templates/site/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +190,8 @@
       <workItem from="1649938616705" duration="6090000" />
       <workItem from="1649988277150" duration="62838000" />
       <workItem from="1650803787247" duration="1245000" />
+      <workItem from="1651850621022" duration="1239000" />
+      <workItem from="1651905073972" duration="595000" />
     </task>
     <servers />
   </component>
