@@ -13,14 +13,14 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     private final AlphaInterceptor alphaInterceptor;
     private final LoginTicketInterceptor loginTicketInterceptor;
-    private final LoginRequiredInterceptor loginRequiredInterceptor;
+//    抛弃拦截器
+    @Autowired
+    private  LoginRequiredInterceptor loginRequiredInterceptor;
 
 
-    public WebMvcConfig(LoginRequiredInterceptor loginRequiredInterceptor,
-                        LoginTicketInterceptor loginTicketInterceptor, AlphaInterceptor alphaInterceptor) {
+    public WebMvcConfig(LoginTicketInterceptor loginTicketInterceptor, AlphaInterceptor alphaInterceptor) {
         this.loginTicketInterceptor = loginTicketInterceptor;
         this.alphaInterceptor = alphaInterceptor;
-        this.loginRequiredInterceptor = loginRequiredInterceptor;
     }
 
     //    拦截有先后顺序
