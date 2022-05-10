@@ -51,8 +51,8 @@ function publish() {
     //     }
     // );
     // // 获取标题和内容
-    // var title = $("#recipient-name").val();
-    // var content = $("#message-text").val();
+    var title = $("#recipient-name").val();
+    var content = $("#message-text").val();
     // 发送异步请求(POST)
     $.post(
         CONTEXT_PATH + "/discuss/add",

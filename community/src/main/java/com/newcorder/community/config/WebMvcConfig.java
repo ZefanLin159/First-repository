@@ -1,6 +1,7 @@
 package com.newcorder.community.config;
 
 import com.newcorder.community.controller.Interceptor.AlphaInterceptor;
+import com.newcorder.community.controller.Interceptor.DataInterceptor;
 import com.newcorder.community.controller.Interceptor.LoginRequiredInterceptor;
 import com.newcorder.community.controller.Interceptor.LoginTicketInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +14,11 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     private final AlphaInterceptor alphaInterceptor;
     private final LoginTicketInterceptor loginTicketInterceptor;
-//    抛弃拦截器
     @Autowired
-    private  LoginRequiredInterceptor loginRequiredInterceptor;
+    private DataInterceptor dataInterceptor;
+//    抛弃拦截器
+//    @Autowired
+//    private  LoginRequiredInterceptor loginRequiredInterceptor;
 
 
     public WebMvcConfig(LoginTicketInterceptor loginTicketInterceptor, AlphaInterceptor alphaInterceptor) {
@@ -37,8 +40,12 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
 
 //        拦截一些没登录前不能访问的网页
-        registry.addInterceptor(loginRequiredInterceptor)
+//        registry.addInterceptor(loginRequiredInterceptor)
+//                .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
+
+        registry.addInterceptor(dataInterceptor)
                 .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
+
     }
 
 

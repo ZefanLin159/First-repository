@@ -24,10 +24,15 @@ public class DiscussPost {
     private String title;
     @Field(type = FieldType.Text, analyzer = "ik_max_word", searchAnalyzer = "ik_smart")
     private String content;
+
+    // 0-普通 1-置顶
     @Field(type = FieldType.Integer)
     private int type;
+
+    //    0-正常，1-精华，2-拉黑
     @Field(type = FieldType.Integer)
     private int status;
+
     @Field(type = FieldType.Date_Range)
     private Date createTime;
     @Field(type = FieldType.Integer)
