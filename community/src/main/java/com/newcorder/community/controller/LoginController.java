@@ -60,9 +60,9 @@ public class LoginController implements CommunityConstant {
             kaptcha = (String) redisTemplate.opsForValue().get(redisKey);
         }
 //        验证码忽略大小写kaptcha.equalsIgnoreCase(code))
-        boolean flag1 = StringUtils.isBlank(kaptcha);
-        boolean flag2 = StringUtils.isBlank(code);
-        boolean flag3 = kaptcha.equalsIgnoreCase(code);
+//        boolean flag1 = StringUtils.isBlank(kaptcha);
+//        boolean flag2 = StringUtils.isBlank(code);
+//        boolean flag3 = kaptcha.equalsIgnoreCase(code);
         if (StringUtils.isBlank(kaptcha) || StringUtils.isBlank(code) || !kaptcha.equalsIgnoreCase(code)) {
             model.addAttribute("codeMsg", "验证码不正确");
             return "site/login";

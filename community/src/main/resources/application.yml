@@ -60,9 +60,24 @@ spring:
   data:
     elasticsearch:
 
-      # 集群已废弃
-#       cluster-name: nowcoder
-#       cluster-nodes: 127.0.0.1:9300
+    # 集群已废弃
+    #       cluster-name: nowcoder
+    #       cluster-nodes: 127.0.0.1:9300
+  # task
+  task:
+    execution:
+      pool:
+        core-size: 5 #线程池线程总数
+        max-size: 15 # 线程数自动扩容
+        queue-capacity: 100 # 队列缓冲任务数
+    scheduling:
+      pool:
+        size: 5 # 线程池线程总数
+  quartz:
+    job-store-type: jdbc
+    scheduler-name: communityScheduler
+
+
 
 # mybatis 配置
 mybatis:
