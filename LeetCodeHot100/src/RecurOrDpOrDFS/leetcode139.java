@@ -8,8 +8,12 @@ import java.util.Set;
 //单词拆分
 public class leetcode139 {
     public static void main(String[] args) {
+        String word = "leetcode";
+        String subWord = word.substring(0,4);
+
         leetcode139 lc139 = new leetcode139();
         List<String> list = new ArrayList<>();
+
         list.add("leet");
         list.add("code");
         System.out.println(lc139.wordBreak1("leetcode", list));
@@ -40,19 +44,19 @@ public class leetcode139 {
     }
 
     public boolean wordBreak1(String s, List<String> wordDict) {
-        Set<String> wordDictSet = new HashSet<>(wordDict);
+        Set<String> set = new HashSet<>(wordDict);
         boolean[] dp = new boolean[s.length() + 1];
         dp[0] = true;
-        for (int i = 1; i <= s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             for (int j = 0; j < i; j++) {
-                String word = s.substring(j,i);
-                if (dp[j] && wordDictSet.contains(word)) {
+                String word = s.substring(j, i);
+                if (dp[j] && set.contains(word)) {
                     dp[i] = true;
                     break;
                 }
             }
         }
-        return dp[s.length()];
+        return dp[dp.length - 1];
     }
 
 }
