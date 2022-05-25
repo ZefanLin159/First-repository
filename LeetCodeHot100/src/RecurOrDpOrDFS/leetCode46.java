@@ -9,29 +9,28 @@ public class leetCode46 {
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
+//        访问标记
+        boolean[] visited = new boolean[nums.length];
         int len = nums.length;
-        boolean[] visited = new boolean[len];
-        recur(list, new ArrayList<Integer>(), nums, visited, 0, len);
+        recur(list, new ArrayList<Integer>(), visited, nums, 0, len);
         return list;
-
     }
 
-    private void recur(List<List<Integer>> list, ArrayList<Integer> path, int[] nums, boolean[] visited, int depth, int len) {
+    private void recur(List<List<Integer>> list, ArrayList<Integer> path, boolean[] visited, int[] nums, int depth, int len) {
         if (depth == len) {
             list.add(new ArrayList<>(path));
-            return;
-        }
-        for (int i = 0; i < len; i++) {
-            if (!visited[i]) {
-                visited[i] = true;
-                path.add(nums[i]);
-                recur(list, path, nums, visited, depth + 1, len);
-                visited[i] = false;
-                path.remove(path.size() - 1);
+        } else {
+//            和子集的区别在于要包括所有的组合，所以遍历从0开始，而且需要一个visited数组来记录当前坐标是否已访问
+            for (int i = 0; i < len; i++) {
+                if (!visited[i]) {
+                    visited[i] = true;
+                    path.add(nums[i]);
+                    recur(list, path, visited, nums, depth + 1, len);
+                    visited[i] = false;
+                    path.remove(path.size() - 1);
+                }
             }
         }
-
-
     }
 
 
@@ -68,6 +67,6 @@ public class leetCode46 {
 
     public static void main(String[] args) {
         leetCode46 lc46 = new leetCode46();
-        System.out.println(lc46.permute(new int[]{1, 2, 3, 4}));
+        System.out.println(lc46.permute(new int[]{1, 2, 3}));
     }
 }

@@ -64,9 +64,24 @@ public class PostScoreRefreshJob implements Job, CommunityConstant {
 
     private void refresh(int postId) {
         DiscussPost post = discussPostService.findDiscussPost(postId);
-        if(post == null){
+        if (post == null) {
             logger.error("");
         }
+//        是否精华
+        boolean wonderful = post.getStatus() == 1;
+//        评论数量
+        int commentCount = post.getCommentCount();
+//        点赞数量
+        long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, postId);
+//        计算权重
+        double w = (wonderful ? 75 : 0) + commentCount * 10L + likeCount * 2;
+//        分数= 帖子权重+距离天数
+        double score = Math.log10(Math.max(w, 1)) + (post.getCreateTime().getTime() - epoch.getTime() / (1000 * 3600 * 24));
+//        更新帖子分数
+        discussPostService.updateScore(postId, score);
+//        同步搜索数据
+        post.setScore(score);
+        elasticSearchService.saveDisscussPost(post);
     }
 
 
