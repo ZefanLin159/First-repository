@@ -160,6 +160,12 @@
             <artifactId>quartz</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.qiniu/qiniu-java-sdk -->
+        <dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+            <version>7.10.3</version>
+        </dependency>
 
     </dependencies>
 

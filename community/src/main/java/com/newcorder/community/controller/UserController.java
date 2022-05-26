@@ -8,16 +8,15 @@ import com.newcorder.community.service.UserService;
 import com.newcorder.community.util.CommunityConstant;
 import com.newcorder.community.util.CommunityUtil;
 import com.newcorder.community.util.HostHolder;
+import com.qiniu.util.Auth;
+import com.qiniu.util.StringMap;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletOutputStream;
@@ -30,6 +29,19 @@ import java.io.IOException;
 @RequestMapping("/user")
 public class UserController implements CommunityConstant {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+
+    //    七牛云的一些参数注入
+    @Value("${qiniu.key.access}")
+    private String accessKey;
+
+    @Value("${qiniu.key.secret}")
+    private String secretKey;
+
+    @Value("${qiniu.bucket.header.name}")
+    private String headerBucketName;
+
+    @Value("${qiniu.bucket.header.url}")
+    private String headerBucketUrl;
 
     //    注入路径和域名
     @Value("${community.path.upload}")
@@ -57,12 +69,38 @@ public class UserController implements CommunityConstant {
 
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
-    public String getSettingPage() {
+    public String getSettingPage(Model model) {
+        /*上传文件名称*/
+        String fileName = CommunityUtil.generateUUID();
+        /*设置响应信息*/
+        StringMap policy = new StringMap();
+//        异步实现
+        policy.put("returnBody", CommunityUtil.getJSONString(0));
+        /*生成上传凭证*/
+        Auth auth = Auth.create(accessKey, secretKey);
+        String uploadToken = auth.uploadToken(headerBucketName, fileName, 3600, policy); //1h后到期
+
+        model.addAttribute("uploadToken", uploadToken);
+        model.addAttribute("fileName", fileName);
 
         return "site/setting";
     }
 
+    //    更新头像路径
+    @RequestMapping(path = "/header/url", method = RequestMethod.POST)
+    @ResponseBody
+    public String updateHeaderUrl(String fileName) {
+        if (StringUtils.isBlank(fileName)) {
+            return CommunityUtil.getJSONString(1, "文件名不能为空");
+        }
+        String url = headerBucketUrl + "/" + fileName;
+        userService.updateHeader(hostHolder.getUser().getId(), url);
+        return CommunityUtil.getJSONString(0);
+    }
+
     /*上传头像*/
+    /*废弃*/
+    @Deprecated
     @LoginRequired
     @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImage, Model model) {
@@ -104,6 +142,8 @@ public class UserController implements CommunityConstant {
 
     // 向浏览器响应图片，向浏览器响应的不是网页也不是字符串，而是图片，是二进制的数据，通过流手动向浏览器输出，手动调用response往外写
     //http://localhost:8080/community/user/header/xxx.png 这里的路径不可以乱来，得是链接到文件名
+    /*废弃*/
+    @Deprecated
     @RequestMapping(path = "/header/{fileName}", method = RequestMethod.GET)
     public void getHeader(@PathVariable("fileName") String fileName, HttpServletResponse response) {
 //        服务器存放路径

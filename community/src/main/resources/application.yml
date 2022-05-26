@@ -102,3 +102,14 @@ community:
   path:
     domain: http://localhost:8080
     upload: d:/work/data/upload
+
+# qiniu
+qiniu:
+  key:
+    access: j8LDB2_YixXW6bp9PTmwwfJo43QS7SmMo_AMio7_
+    secret: xRTLtPvR0EsiZRPZmJS_BbBj-hok87EQK-TAnqhS
+  bucket:
+    header:
+      name: communitylinheader
+      url: http://rcfwrfcmn.hn-bkt.clouddn.com
+#share先不做，因为7,8节还没做
