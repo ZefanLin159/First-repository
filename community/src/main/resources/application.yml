@@ -106,10 +106,10 @@ community:
 # qiniu
 qiniu:
   key:
-    access: j8LDB2_YixXW6bp9PTmwwfJo43QS7SmMo_AMio7_
-    secret: xRTLtPvR0EsiZRPZmJS_BbBj-hok87EQK-TAnqhS
+    access: 136KGcLhoAcZmWY3y4_P2m0OsI8hyOFAOxFzLICf
+    secret: 9Lm-Ek_X1cJdBK-lpDHkAZkgryee9woe7MJ-MvNR
   bucket:
     header:
       name: communitylinheader
-      url: http://rcfwrfcmn.hn-bkt.clouddn.com
+      url: http://upload-z2.qiniup.com
 #share先不做，因为7,8节还没做
