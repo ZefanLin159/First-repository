@@ -1,4 +1,4 @@
-package com.nowcorder.community;
+package com.newcorder.community;
 
 import com.newcorder.community.CommunityApplication;
 import com.newcorder.community.entity.DiscussPost;
